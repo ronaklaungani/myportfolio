@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html id="top">
+<head>
+
+	<title>Ronak Laungani</title>
+	<link rel="stylesheet" type="text/css" href="style-desktop.css">
+	<link rel="stylesheet" type="text/css" href="style-mobile.css">
+	<link rel="stylesheet" type="text/css" href="style-tablet.css">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+
+
+</head>
+<body>
+
+
+	<img src="assets/site-logo-2.svg" class="site-logo" onclick="window.open('index.html', '_self')">
+
+
+
+	<ul id="menu-list">
+					<li><a href="index.html" onclick="closemenu()">UI/UX</a></li>
+
+					<!-- <li><a href="motion.html" onclick="closemenu()">Motion</a></li> -->
+
+					<li><a href="logos.html" onclick="closemenu()">Logos</a></li>
+					
+					<li><a href="podcast.html" onclick="closemenu()">Podcast</a></li>
+
+					<li><a href="archive.html" onclick="closemenu()">Archives</a></li>
+
+					<li onclick="closemenu()" style="color: red; cursor: pointer;">Close Menu</li>
+
+	</ul>
+
+
+
+
+	<div class="main-body">
+
+
+
+		<div id="col-1">
+
+
+			
+
+				<div class="page-header-bar" style="margin-top: 0px;">
+					<div class="jump-to-menu-bttn" id="menu-tag-id" style="margin-top: 0px;"><div class="title-inactive" style="float:right; margin-bottom: 20px; text-decoration: none; color: black;" onclick="openmenu()">Menu</div></div>
+				</div>
+					
+					<script type="text/javascript">
+						
+						function closemenu() {
+							document.getElementById('menu-list').style.display = 'none';
+						}
+
+							function openmenu() {
+							document.getElementById('menu-list').style.display = 'block';
+							document.getElementById('menu-list').style.opacity = '100%';
+						}
+
+
+						function changetext1() {
+
+								 function randomtext() {
+								 	var x = ['Product Designer', 'UI Designer', 'UX Designer', 'Interaction Designer', 'Graphic Designer', 'Podcaster', 'Sketch User', 'Jared Spool follower', 'Don Norman preacher', 'Behance screener', 'Font collector', 'Fake User Persona'];
+								 	var randomNumber = Math.floor(Math.random()*x.length);
+								 	let y = x[randomNumber];
+								 	return y;
+								 }
+								document.getElementById('my-designation').innerHTML = randomtext();
+							}
+
+
+						function changetext2() {
+
+								 function randomtext() {
+								 	var x = ['sandwich maker', 'sleep enthusiast', 'dedicated Netflix user', 'professional whistler', 'cheeseball eater', 'food explorer', 'stress taker', 'The Office fan', 'bathroom comedian', 'cajon owner'];
+								 	var randomNumber = Math.floor(Math.random()*x.length);
+								 	let y = x[randomNumber];
+								 	return y;
+								 }
+								document.getElementById('magic-words').innerHTML = randomtext();
+							}
+
+
+						function copy_function(id){
+  							var value = document.getElementById(id).innerHTML;
+  							var input_temp = document.createElement("input");
+ 							input_temp.value = value;
+  							document.body.appendChild(input_temp);
+ 							input_temp.select();
+  							document.execCommand("copy");
+  							document.body.removeChild(input_temp);
+  							alert("Email copied to clipboard");
+							
+							}
+
+
+						
+
+					</script>
+			
+
+
+
+			<div id="header">
+
+				<p class="title">Hi! I'm<br>Ronak Laungani,<br><i><span id="my-designation" onclick="changetext1()">Product Designer</span></i> by the day<br><i><span id="magic-words" onclick="changetext2()">dedicated Netflix user</span></i> by the night.
+					<br>
+					<br>
+					<br>
+					<br>
+					View my <a class="highlight" href="https://drive.google.com/file/d/1s4JGbNdlyMthQclRqzSnpS6K5qXiYrEu/view?usp=sharing" target="_blank">Résumé</a><br>
+				Contact me on<br>
+				<span class="highlight" style="cursor: pointer;" onclick="copy_function('mytext')" id="mytext">launganironak@gmail.com</span><br>
+			Connect with me on<br><a class="highlight" href="https://www.linkedin.com/in/ronaklaungani/" target="_blank">LinkedIn</a> or <a class="highlight" href="https://www.facebook.com/launganironak/" target="_blank">Facebook</a>.
+			<br>
+					
+			</div>
+
+
+		</div>
+
+
+
+
+
+
+		<!-- COLUMN 2 -->
+
+		<div id="col-2">
+			
+				<div class="page-heading" style="margin: 0px;"><span class="title-inactive" id="uiux-title-id" onclick="window.open('index.html', '_self')">UI/UX</span><!-- <span class="title-inactive" id="motion-title-id" onclick="window.open('motion.html', '_self')">Motion</span> --><span class="title-inactive" id="logo-title-id" onclick="window.open('logos.html', '_self')">Logos</span><span class="title-active" id="podcast-title-id" onclick="window.open('podcast.html', '_self')">Podcast</span><span class="title-inactive" id="archive-title-id" onclick="window.open('archive.html', '_self')">Archives</span></div>
+			
+
+
+
+
+			<div id="podcast">
+
+				<div class="invisible-title sub-title">Podcast Series</div>
+
+				<div class="card-left" style="background-image: url(assets/podcast/ankur-tile.jpg);" onclick="window.open('https://www.youtube.com/watch?v=tr_mT9-T3hM&feature=youtu.be')">
+					<div class="tile-text-box-podcast">
+						<h1>Ankur<br>Sardana</h1>
+						<h2>of Amazon | 3 episodes</h2>
+					</div>
+
+				</div>
+
+				<div class="card-right" style="background-image: url(assets/podcast/steve-tile.jpg);" onclick="window.open('https://www.youtube.com/watch?v=r-mIRtXSVoM&feature=youtu.be')">
+					<div class="tile-text-box-podcast">
+						<h1>Steve<br>Yatson</h1>
+						<h2>of ProductOps | 1 episode</h2>
+					</div>
+
+				</div>
+
+				<div class="card-left" style="background-image: url(assets/podcast/aiswarya-tile.jpg);" onclick="window.open('https://www.youtube.com/watch?v=sqXi3g-yuPY&feature=youtu.be')">
+					<div class="tile-text-box-podcast">
+						<h1>Aiswarya<br>Kolisetty</h1>
+						<h2>of Zomato | 3 episodes</h2>
+					</div>
+
+				</div>
+
+				<div class="card-right" style="background-image: url(assets/podcast/mayur-tile.jpg);" onclick="window.open('https://www.youtube.com/watch?v=YEDZUWHyTsU&feature=youtu.be')">
+					<div class="tile-text-box-podcast">
+						<h1>Mayur<br>Chaudhary</h1>
+						<h2>of MagicBricks | 3 episodes</h2>
+					</div>
+
+				</div>
+
+				<div class="card-left" style="background-image: url(assets/podcast/amit-tile.jpg);" onclick="window.open('https://www.youtube.com/watch?v=eGJb9m0PNE8&feature=youtu.be')">
+					<div class="tile-text-box-podcast">
+						<h1>Amit<br>Bhambere</h1>
+						<h2>of Hotstar | 2 episodes</h2>
+					</div>
+
+				</div>
+
+				<div class="card-right" style="background-image: url(assets/podcast/prathima-tile.jpg);" onclick="window.open('https://www.youtube.com/watch?v=j4aQUT1bC7c&feature=youtu.be')">
+					<div class="tile-text-box-podcast">
+						<h1>Prathima<br>Inolu</h1>
+						<h2>of Divami Design | 3 episodes</h2>
+					</div>
+
+				</div>
+
+
+			</div>
+
+
+
+
+			<div class="footer">
+
+				<a class="highlight" href="#top">Go to top</a>
+
+				<p class="title">
+					<span style="opacity: 30%;">Designed & Developed by<br>
+					©Ronak Laungani 2020</span>
+				</p>
+			</div>
+
+		</div>
+	</div>
+	
+</body>
+</html>

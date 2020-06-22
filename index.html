@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html id="top">
+<head>
+
+	<title>Ronak Laungani</title>
+	<link rel="stylesheet" type="text/css" href="style-desktop.css">
+	<link rel="stylesheet" type="text/css" href="style-mobile.css">
+	<link rel="stylesheet" type="text/css" href="style-tablet.css">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+
+
+</head>
+<body>
+
+
+	<img src="assets/site-logo-2.svg" class="site-logo" onclick="window.open('index.html', '_self')">
+
+
+
+	<ul id="menu-list">
+					<li><a href="index.html" onclick="closemenu()">UI/UX</a></li>
+
+					<!-- <li><a href="motion.html" onclick="closemenu()">Motion</a></li> -->
+
+					<li><a href="logos.html" onclick="closemenu()">Logos</a></li>
+					
+					<li><a href="podcast.html" onclick="closemenu()">Podcast</a></li>
+
+					<li><a href="archive.html" onclick="closemenu()">Archives</a></li>
+
+					<li onclick="closemenu()" style="color: red; cursor: pointer;">Close Menu</li>
+
+	</ul>
+
+
+
+
+	<div class="main-body">
+
+
+
+		<div id="col-1">
+
+
+			
+
+				<div class="page-header-bar" style="margin-top: 0px;">
+					<div class="jump-to-menu-bttn" id="menu-tag-id" style="margin-top: 0px;"><div class="title-inactive" style="float:right; margin-bottom: 20px; text-decoration: none; color: black;" onclick="openmenu()">Menu</div></div>
+				</div>
+					
+					<script type="text/javascript">
+						
+						function closemenu() {
+							document.getElementById('menu-list').style.display = 'none';
+						}
+
+							function openmenu() {
+							document.getElementById('menu-list').style.display = 'block';
+							document.getElementById('menu-list').style.opacity = '100%';
+						}
+
+
+						function changetext1() {
+
+								 function randomtext() {
+								 	var x = ['Product Designer', 'UI Designer', 'UX Designer', 'Interaction Designer', 'Graphic Designer', 'Podcaster', 'Sketch User', 'Jared Spool follower', 'Don Norman preacher', 'Behance screener', 'Font collector', 'Fake User Persona'];
+								 	var randomNumber = Math.floor(Math.random()*x.length);
+								 	let y = x[randomNumber];
+								 	return y;
+								 }
+								document.getElementById('my-designation').innerHTML = randomtext();
+							}
+
+
+						function changetext2() {
+
+								 function randomtext() {
+								 	var x = ['sandwich maker', 'sleep enthusiast', 'dedicated Netflix user', 'professional whistler', 'cheeseball eater', 'food explorer', 'stress taker', 'The Office fan', 'bathroom comedian', 'cajon owner'];
+								 	var randomNumber = Math.floor(Math.random()*x.length);
+								 	let y = x[randomNumber];
+								 	return y;
+								 }
+								document.getElementById('magic-words').innerHTML = randomtext();
+							}
+
+
+						function copy_function(id){
+  							var value = document.getElementById(id).innerHTML;
+  							var input_temp = document.createElement("input");
+ 							input_temp.value = value;
+  							document.body.appendChild(input_temp);
+ 							input_temp.select();
+  							document.execCommand("copy");
+  							document.body.removeChild(input_temp);
+  							alert("Email copied to clipboard");
+							
+							}
+
+
+						// function showuiux() {
+
+						// 	document.getElementById('uiux').style.display = 'grid';
+						// 	document.getElementById('uiux-title-id').className = 'title-active';
+
+						// 	document.getElementById('motion').style.display = 'none';
+						// 	document.getElementById('motion-title-id').className = 'title-inactive';
+
+						// 	document.getElementById('logo').style.display = 'none';
+						// 	document.getElementById('logo-title-id').className = 'title-inactive';
+
+						// 	document.getElementById('podcast').style.display = 'none';
+						// 	document.getElementById('podcast-title-id').className = 'title-inactive';
+
+						// 	document.getElementById('archive').style.display = 'none';
+						// 	document.getElementById('archive-title-id').className = 'title-inactive';
+
+						// 	document.getElementById('menu-list').style.display = 'none';
+
+						// 	document.getElementById('col-2').id = 'col-2-2'
+
+
+
+
+
+						// }
+
+						// function showmotion() {
+
+						// 	document.getElementById('uiux').style.display = 'none';
+						// 	document.getElementById('uiux-title-id').className = 'title-inactive';
+
+						// 	document.getElementById('motion').style.display = 'grid';
+						// 	document.getElementById('motion-title-id').className = 'title-active';
+
+						// 	document.getElementById('logo').style.display = 'none';
+						// 	document.getElementById('logo-title-id').className = 'title-inactive';
+
+						// 	document.getElementById('podcast').style.display = 'none';
+						// 	document.getElementById('podcast-title-id').className = 'title-inactive';
+
+						// 	document.getElementById('archive').style.display = 'none';
+						// 	document.getElementById('archive-title-id').className = 'title-inactive';
+
+						// 	document.getElementById('menu-list').style.display = 'none';
+
+						// 	document.getElementById('col-2').id = 'col-2-2'
+
+						// }
+
+						// function showlogo() {
+
+						// 	document.getElementById('uiux').style.display = 'none';
+						// 	document.getElementById('uiux-title-id').className = 'title-inactive';
+
+						// 	document.getElementById('motion').style.display = 'none';
+						// 	document.getElementById('motion-title-id').className = 'title-inactive';
+
+						// 	document.getElementById('logo').style.display = 'grid';
+						// 	document.getElementById('logo-title-id').className = 'title-active';
+
+						// 	document.getElementById('podcast').style.display = 'none';
+						// 	document.getElementById('podcast-title-id').className = 'title-inactive';
+
+						// 	document.getElementById('archive').style.display = 'none';
+						// 	document.getElementById('archive-title-id').className = 'title-inactive';
+
+						// 	document.getElementById('menu-list').style.display = 'none';
+
+						// 	document.getElementById('col-2').id = 'col-2-2'
+
+						// }
+
+						// function showpodcast() {
+
+						// 	document.getElementById('uiux').style.display = 'none';
+						// 	document.getElementById('uiux-title-id').className = 'title-inactive';
+
+						// 	document.getElementById('motion').style.display = 'none';
+						// 	document.getElementById('motion-title-id').className = 'title-inactive';
+
+						// 	document.getElementById('logo').style.display = 'none';
+						// 	document.getElementById('logo-title-id').className = 'title-inactive';
+
+						// 	document.getElementById('podcast').style.display = 'grid';
+						// 	document.getElementById('podcast-title-id').className = 'title-active';
+
+						// 	document.getElementById('archive').style.display = 'none';
+						// 	document.getElementById('archive-title-id').className = 'title-inactive';
+
+						// 	document.getElementById('menu-list').style.display = 'none';
+
+						// 	document.getElementById('col-2').id = 'col-2-2'
+
+						// }
+
+						// function showarchive() {
+
+						// 	document.getElementById('uiux').style.display = 'none';
+						// 	document.getElementById('uiux-title-id').className = 'title-inactive';
+
+						// 	document.getElementById('motion').style.display = 'none';
+						// 	document.getElementById('motion-title-id').className = 'title-inactive';
+
+						// 	document.getElementById('logo').style.display = 'none';
+						// 	document.getElementById('logo-title-id').className = 'title-inactive';
+
+						// 	document.getElementById('podcast').style.display = 'none';
+						// 	document.getElementById('podcast-title-id').className = 'title-inactive';
+
+						// 	document.getElementById('archive').style.display = 'grid';
+						// 	document.getElementById('archive-title-id').className = 'title-active';
+
+						// 	document.getElementById('menu-list').style.display = 'none';
+
+						// 	document.getElementById('col-2').id = 'col-2-2'
+
+						// }
+
+					</script>
+			
+
+
+
+			<div id="header-show">
+
+				<p class="title">Hi! I'm<br>Ronak Laungani,<br><i><span id="my-designation" onclick="changetext1()">Product Designer</span></i> by the day<br><i><span id="magic-words" onclick="changetext2()">sleep enthusiast</span></i> by the night.
+					<br>
+					<br>
+					<br>
+					<br>
+					View my <a class="highlight" href="https://drive.google.com/file/d/1s4JGbNdlyMthQclRqzSnpS6K5qXiYrEu/view?usp=sharing" target="_blank">Résumé</a><br>
+				Contact me on<br>
+				<span class="highlight" style="cursor: pointer;" onclick="copy_function('mytext')" id="mytext">launganironak@gmail.com</span><br>
+			Connect with me on<br><a class="highlight" href="https://www.linkedin.com/in/ronaklaungani/" target="_blank">LinkedIn</a> or <a class="highlight" href="https://www.facebook.com/launganironak/" target="_blank">Facebook</a>.
+			<br>
+					
+			</div>
+
+
+		</div>
+
+
+
+
+
+
+		<!-- COLUMN 2 -->
+
+		<div id="col-2-2">
+			
+				<div class="page-heading" style="margin: 0px;"><span class="title-active" id="uiux-title-id" onclick="window.open('index.html', '_self')">UI/UX</span><!-- <span class="title-inactive" id="motion-title-id" onclick="window.open('motion.html', '_self')">Motion</span> --><span class="title-inactive" id="logo-title-id" onclick="window.open('logos.html', '_self')">Logos</span><span class="title-inactive" id="podcast-title-id" onclick="window.open('podcast.html', '_self')">Podcast</span><span class="title-inactive" id="archive-title-id" onclick="window.open('archive.html', '_self')">Archives</span></div>
+			
+
+
+
+			<div id="uiux">
+
+				<div class="invisible-title sub-title">UI/UX Projects</div>
+
+				<div class="card-left" style="background-image: url(assets/outhere.jpg);" onclick="window.open('outhere.html', '_self')">
+					<div class="tile-text-box">
+						<h1>OutHere<br>Location<br>Sharing</h1>
+						<h2>UI, Interaction & Motion Design</h2>
+					</div>
+				</div>
+
+				<div class="card-right" style="background-image: url(assets/scoring.jpg);" onclick="window.open('scoring.html', '_self')">
+					<div class="tile-text-box">
+						<h1>Soccer<br>Scoring<br>App</h1>
+						<h2>UI, UX & Interaction</h2>
+					</div>
+				</div>
+
+				<div class="card-left" style="background-image: url(assets/slink.jpg);" onclick="window.open('slink.html', '_self')">
+					<div class="tile-text-box">
+						<h1>Slink<br>Reminder<br>App</h1>
+						<h2>UX & Visual Design</h2>
+					</div>
+				</div>
+
+				<div class="card-right" style="background-image: url(assets/scheduler.jpg);" onclick="window.open('scheduler.html', '_self')">
+					<div class="tile-text-box">
+						<h1>Weekly<br>Schedule<br>Viewer</h1>
+						<h2>Interaction Design</h2>
+					</div>
+				</div>
+
+
+			</div>
+
+
+
+
+
+			<div class="footer">
+
+				<a class="highlight" href="#top">Go to top</a>
+
+				<p class="title">
+					<span style="opacity: 30%;">Designed & Developed by<br>
+					©Ronak Laungani 2020</span>
+				</p>
+			</div>
+
+		</div>
+	</div>
+	
+</body>
+</html>
