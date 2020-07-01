@@ -9,9 +9,9 @@
 body { background-color: white; }
 
 
-.site-logo { position: fixed; margin-left: 15px; margin-top: 15px; width: 20%; }
+.site-logo { position: fixed; margin-left: 30px; margin-top: 25px; width: 40px; }
 
-.site-logo-on-page { position: absolute; margin-left: 15px; margin-top: -20px; width: 20%; }
+.site-logo-on-page { position: absolute; margin-left: 30px; margin-top: -5px; width: 40px; }
 
 .main-body { display: grid;
 	grid-template-columns: 1fr 4fr; }
@@ -60,17 +60,17 @@ body { background-color: white; }
 
 
 .title-active { opacity: 70%;
-				margin-right: 40px;
-				font-size: 16px;
+				margin-right: 30px;
+				font-size: 14px;
 				color: #FF8B00;
 
 				 }
 
 
 .title-inactive { opacity: 30%;
-					margin-right: 40px;
+					margin-right: 30px;
 					transition-duration: 0.2s;
-					font-size: 16px;
+					font-size: 14px;
 					 }
 
 .title-inactive:hover { opacity: 70%;

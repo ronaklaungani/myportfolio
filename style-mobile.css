@@ -11,9 +11,9 @@
 body { background-color: white; }
 
 
-.site-logo { position: fixed; margin-left: 20px; margin-top: 10px; width: 40%; cursor: pointer; }
+.site-logo { position: fixed; margin-left: 40px; margin-top: 25px; width: 40px; cursor: pointer; }
 
-.site-logo-on-page { position: absolute; margin-left: 15px; margin-top: -10px; width: 30%; cursor: pointer; }
+.site-logo-on-page { position: absolute; margin-left: 40px; margin-top: -5px; width: 40px; cursor: pointer; }
 
 .main-body { display: grid;
 	grid-template-columns: 1fr; }
@@ -280,7 +280,7 @@ color: #FA6400;  }
 		height: 210px;
 		margin-top: 0px;
 		margin-right: 0%;
-		background-position: center bottom;
+		background-position: center;
 		background-size: auto 120%;
 		
 		 }
