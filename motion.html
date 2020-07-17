@@ -50,58 +50,9 @@
 					<div class="jump-to-menu-bttn" id="menu-tag-id" style="margin-top: 0px;"><div class="title-inactive" style="float:right; margin-bottom: 20px; text-decoration: none; color: black;" onclick="openmenu()">Menu</div></div>
 				</div>
 					
-					<script type="text/javascript">
-						
-						function closemenu() {
-							document.getElementById('menu-list').style.display = 'none';
-						}
+					
 
-							function openmenu() {
-							document.getElementById('menu-list').style.display = 'block';
-							document.getElementById('menu-list').style.opacity = '100%';
-						}
-
-
-						function changetext1() {
-
-								 function randomtext() {
-								 	var x = ['Product Designer', 'UI Designer', 'UX Designer', 'Interaction Designer', 'Graphic Designer', 'Podcaster', 'Sketch User', 'Jared Spool follower', 'Don Norman preacher', 'Behance screener', 'Font collector', 'Fake User Persona'];
-								 	var randomNumber = Math.floor(Math.random()*x.length);
-								 	let y = x[randomNumber];
-								 	return y;
-								 }
-								document.getElementById('my-designation').innerHTML = randomtext();
-							}
-
-
-						function changetext2() {
-
-								 function randomtext() {
-								 	var x = ['sandwich maker', 'sleep enthusiast', 'dedicated Netflix user', 'professional whistler', 'cheeseball eater', 'food explorer', 'stress taker', 'The Office fan', 'bathroom comedian', 'cajon owner'];
-								 	var randomNumber = Math.floor(Math.random()*x.length);
-								 	let y = x[randomNumber];
-								 	return y;
-								 }
-								document.getElementById('magic-words').innerHTML = randomtext();
-							}
-
-
-						function copy_function(id){
-  							var value = document.getElementById(id).innerHTML;
-  							var input_temp = document.createElement("input");
- 							input_temp.value = value;
-  							document.body.appendChild(input_temp);
- 							input_temp.select();
-  							document.execCommand("copy");
-  							document.body.removeChild(input_temp);
-  							alert("Email copied to clipboard");
-							
-							}
-
-
-						
-
-					</script>
+		<script src="intro.js"></script>
 			
 
 
@@ -141,23 +92,29 @@
 
 				<div class="invisible-title sub-title">Motion Design</div>
 
-				<div class="card-left" style="background-image: url(assets/motion/button-2.gif);"></div>
+				<div class="card-left" style="background-color: #c3c3c3">
+					<video controls autoplay muted loop style="width: 100%; height: inherit; align-self: center;">
+	  					<source src="assets/motion/instagram-by-apple-2.mp4" type="video/mp4">
+	  				</video>
+  				</div>
 
-				<div class="card-right" style="background-color: #485b82">
+				<div class="card-right" style="background-image: url(assets/motion/button-2.gif);"></div>
+
+				<div class="card-left" style="background-color: #485b82">
 					<video controls autoplay muted loop style="width: 100%; height: inherit; align-self: center;">
 	  					<source src="assets/motion/outhere.mp4" type="video/mp4">
 	  				</video>
   				</div>
 
-				<div class="card-left" style="background-image: url(assets/motion/button-4.gif);"></div>
+				<div class="card-right" style="background-image: url(assets/motion/button-4.gif);"></div>
 
-				<div class="card-right" style="background-image: url(assets/motion/button-6.gif);"></div>
+				<div class="card-left" style="background-image: url(assets/motion/button-6.gif);"></div>
 
-				<div class="card-left" style="background-image: url(assets/motion/button-3.gif);"></div>
+				<div class="card-right" style="background-image: url(assets/motion/button-3.gif);"></div>
 
-				<div class="card-right" style="background-image: url(assets/motion/button-1.gif);"></div>
+				<div class="card-left" style="background-image: url(assets/motion/button-1.gif);"></div>
 
-  				<div class="card-left">
+  				<div class="card-right">
 					<video controls autoplay muted loop style="width: 100%; height: inherit; align-self: center;">
 	  					<source src="assets/motion/egs.mp4" type="video/mp4">
 	  				</video>

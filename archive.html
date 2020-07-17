@@ -50,57 +50,9 @@
 					<div class="jump-to-menu-bttn" id="menu-tag-id" style="margin-top: 0px;"><div class="title-inactive" style="float:right; margin-bottom: 20px; text-decoration: none; color: black;" onclick="openmenu()">Menu</div></div>
 				</div>
 					
-					<script type="text/javascript">
-						
-						function closemenu() {
-							document.getElementById('menu-list').style.display = 'none';
-						}
+					
 
-							function openmenu() {
-							document.getElementById('menu-list').style.display = 'block';
-							document.getElementById('menu-list').style.opacity = '100%';
-
-
-						}
-
-						function changetext1() {
-
-								 function randomtext() {
-								 	var x = ['Product Designer', 'UI Designer', 'UX Designer', 'Interaction Designer', 'Graphic Designer', 'Podcaster', 'Sketch User', 'Jared Spool follower', 'Don Norman preacher', 'Behance screener', 'Font collector', 'Fake User Persona'];
-								 	var randomNumber = Math.floor(Math.random()*x.length);
-								 	let y = x[randomNumber];
-								 	return y;
-								 }
-								document.getElementById('my-designation').innerHTML = randomtext();
-							}
-
-
-						function changetext2() {
-
-								 function randomtext() {
-								 	var x = ['sandwich maker', 'sleep enthusiast', 'dedicated Netflix user', 'professional whistler', 'cheeseball eater', 'food explorer', 'stress taker', 'The Office fan', 'bathroom comedian', 'cajon owner'];
-								 	var randomNumber = Math.floor(Math.random()*x.length);
-								 	let y = x[randomNumber];
-								 	return y;
-								 }
-								document.getElementById('magic-words').innerHTML = randomtext();
-							}
-
-
-						function copy_function(id){
-  							var value = document.getElementById(id).innerHTML;
-  							var input_temp = document.createElement("input");
- 							input_temp.value = value;
-  							document.body.appendChild(input_temp);
- 							input_temp.select();
-  							document.execCommand("copy");
-  							document.body.removeChild(input_temp);
-  							alert("Email copied to clipboard");
-							
-							}
-
-
-					</script>
+		<script src="intro.js"></script>
 			
 
 
@@ -141,43 +93,49 @@
 
 				<div class="invisible-title sub-title">Archives</div>
 
+				<div class="card-left" style="background-image: url(assets/archives/youtube.jpg);" onclick="window.open('youtube/index.html')">
+					<div class="tile-text-box">
+						<h1>Re-code:<br>YouTube</h1>
+						<h2>If designed by Facebook<br>HTML, CSS, JS Prototype</h2>
+					</div>
+				</div>
 
-				<div class="card-left" style="background-image: url(assets/archives/321-2.jpg);" onclick="window.open('321sw.html', '_self')">
+				<div class="card-right" style="background-image: url(assets/archives/321-2.jpg);" onclick="window.open('321sw.html', '_self')">
 					<div class="tile-text-box">
 						<h1>321<br>Sportswear</h1>
 						<h2>Brand Design | Look Book Design</h2>
 					</div>
 				</div>
 
-				<div class="card-right" style="background-image: url(assets/archives/ride-share.jpg);" onclick="window.open('https://drive.google.com/file/d/1Xp5Bu_S7Zi4JP1amZVZSGdWF03PfC_7M/view?usp=sharing')">
+				<div class="card-left" style="background-image: url(assets/archives/ride-share.jpg);" onclick="window.open('https://drive.google.com/file/d/1Xp5Bu_S7Zi4JP1amZVZSGdWF03PfC_7M/view?usp=sharing')">
 					<div class="tile-text-box">
 						<h1>Ride<br>Sharing<br>App</h1>
 						<h2>UX Design Assignment<br>(PDF)</h2>
 					</div>
 				</div>
 
-				<div class="card-left" style="background-image: url(assets/archives/asso.jpg);" onclick="window.open('https://www.sketch.com/s/66c129cc-8d1c-40d3-bea3-427234b42fcf/a/zqE78b/play')">
+				<div class="card-right" style="background-image: url(assets/archives/asso.jpg);" onclick="window.open('https://www.sketch.com/s/66c129cc-8d1c-40d3-bea3-427234b42fcf/a/zqE78b/play')">
 					<div class="tile-text-box">
 						<h1>Cricket<br>Association<br>App</h1>
 						<h2>UI, UX & Interaction<br>(Prototype)</h2>
 					</div>
 				</div>
 
-				<div class="card-right" style="background-image: url(assets/archives/bms.jpg);" onclick="window.open('https://drive.google.com/file/d/11Hhb3TMj1sf2XhnJ46mZjKv_GL-NCQw6/view')">
+				<div class="card-left" style="background-image: url(assets/archives/bms.jpg);" onclick="window.open('https://drive.google.com/file/d/11Hhb3TMj1sf2XhnJ46mZjKv_GL-NCQw6/view')">
 					<div class="tile-text-box">
 						<h1>Movie<br>Planner<br>App</h1>
 						<h2>Interaction Design<br>(PDF)</h2>
 					</div>
 				</div>
 
-				<div class="card-left" style="background-image: url(assets/archives/turfwala.jpg);" onclick="window.open('https://drive.google.com/file/d/1HlnSOZs6thBtVXrGms3PP5Xjkep6G8c_/view')">
+				<div class="card-right" style="background-image: url(assets/archives/turfwala.jpg);" onclick="window.open('https://drive.google.com/file/d/1HlnSOZs6thBtVXrGms3PP5Xjkep6G8c_/view')">
 					<div class="tile-text-box">
 						<h1>TurfWala</h1>
 						<h2>Freelance Project<br>(PDF)</h2>
 					</div>
 				</div>
 
-				<div class="card-right" style="background-image: url(assets/archives/crm.jpg);" onclick="window.open('https://drive.google.com/file/d/1sQgA5YouK2Al3V8z8vRPTNVD9sNqwSXj/view')">
+				<div class="card-left" style="background-image: url(assets/archives/crm.jpg);" onclick="window.open('https://drive.google.com/file/d/1sQgA5YouK2Al3V8z8vRPTNVD9sNqwSXj/view')">
 					<div class="tile-text-box">
 						<h1>Sports CRM</h1>
 						<h2>UI & UX Design<br>(PDF)</h2>
