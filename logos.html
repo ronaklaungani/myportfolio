@@ -3,43 +3,29 @@
 <head>
 
 	<title>Ronak Laungani</title>
-	<link rel="stylesheet" type="text/css" href="style-desktop.css">
+	<link rel="stylesheet" type="text/css" href="style-desktop-dark.css">
 	<link rel="stylesheet" type="text/css" href="style-mobile.css">
 	<link rel="stylesheet" type="text/css" href="style-tablet.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-	<link rel="icon" type="image/svg" href="assets/R.svg">
-
+	<link rel="icon" type="image/svg" href="assets/favicon.svg">
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+	<meta property="og:image" content="assets/logos/srushti-s.jpg" />
+	<meta property="og:title" content="Logo Design by Ronak Laungani" />
+	<meta property="og:description" content="All the freelance projects involving logo design." />
 
 </head>
 <body>
 
 
-	<img src="assets/R.svg" class="site-logo" onclick="window.open('index.html', '_self')">
-
-
+	<img src="assets/new-logo.svg" class="site-logo" onclick="window.open('index.html', '_self')">
 
 	<ul id="menu-list">
-					<li><a href="index.html" onclick="closemenu()">UI/UX</a></li>
-
-					<li><a href="motion.html" onclick="closemenu()">Motion</a></li>
-
-					<li><a href="logos.html" onclick="closemenu()">Logos</a></li>
-					
-					<li><a href="podcast.html" onclick="closemenu()">Podcast</a></li>
-
-					<li><a href="archive.html" onclick="closemenu()">Archives</a></li>
-
-					<li onclick="closemenu()" style="color: red; cursor: pointer;">Close Menu</li>
-
+		<script src="mobile-drop-down-menu.js"></script>
 	</ul>
 
 
-
-
 	<div class="main-body">
-
-
 
 		<div id="col-1">
 
@@ -47,29 +33,12 @@
 			
 
 				<div class="page-header-bar" style="margin-top: 0px;">
-					<div class="jump-to-menu-bttn" id="menu-tag-id" style="margin-top: 0px;"><div class="title-inactive" style="float:right; margin-bottom: 20px; text-decoration: none; color: black;" onclick="openmenu()">Menu</div></div>
+					<div class="jump-to-menu-bttn" id="menu-tag-id" style="margin-top: 25px;"><div class="title-inactive" style="float:right; margin-bottom: 20px; text-decoration: none;" onclick="openmenu()">Menu</div></div>
 				</div>
-					
-
-
-		<script src="intro.js"></script>
 			
 
-
-
-			<div id="header">
-
-				<p class="title">Hi! I'm<br>Ronak Laungani,<br><i><span id="my-designation" onclick="changetext1()">Product Designer</span></i> by the day<br><i><span id="magic-words" onclick="changetext2()">professional whistler</span></i> by the night.
-					<br>
-					<br>
-					<br>
-					<br>
-					View my <a class="highlight" href="https://drive.google.com/file/d/1s4JGbNdlyMthQclRqzSnpS6K5qXiYrEu/view?usp=sharing" target="_blank">Résumé</a><br>
-				Contact me on<br>
-				<span class="highlight" style="cursor: pointer;" onclick="copy_function('mytext')" id="mytext">launganironak@gmail.com</span><br>
-			Connect with me on<br><a class="highlight" href="https://www.linkedin.com/in/ronaklaungani/" target="_blank">LinkedIn</a> or <a class="highlight" href="https://www.facebook.com/launganironak/" target="_blank">Facebook</a>.
-			<br>
-					
+			<div class="header-show" id="intro">
+				<script src="intro.js"></script>
 			</div>
 
 
@@ -84,10 +53,9 @@
 
 		<div id="col-2">
 			
-				<div class="page-heading" style="margin: 0px;"><span class="title-inactive" id="uiux-title-id" onclick="window.open('index.html', '_self')">UI/UX</span><span class="title-inactive" id="motion-title-id" onclick="window.open('motion.html', '_self')">Motion</span><span class="title-active" id="logo-title-id" onclick="window.open('logos.html', '_self')">Logos</span><span class="title-inactive" id="podcast-title-id" onclick="window.open('podcast.html', '_self')">Podcast</span><span class="title-inactive" id="archive-title-id" onclick="window.open('archive.html', '_self')">Archives</span></div>
-			
-
-
+				<div class="page-heading" id="topNav" value="logosValue" style="margin-top: 0px;">
+					<script type="text/javascript" src="top-nav.js"></script>
+				</div>
 
 
 			<div id="logo">
@@ -96,57 +64,57 @@
 
 				<div class="card-left" style="background-image: url(assets/logos/srushti-s.jpg);" onclick="window.open('srushti.html', '_self')">
 					<div class="tile-text-box">
-						<h1>Srushti<br>Sirwani</h1>
+						<h1><i class="las la-paint-brush"></i><br>Srushti Sirwani</h1>
 						<h2>Makeup Artist</h2>
 					</div>
 				</div>
 
 				<div class="card-right" style="background-image: url(assets/logos/br.jpg);" onclick="window.open('br.html', '_self')">
 					<div class="tile-text-box">
-						<h1>Boardroom<br>Café</h1>
+						<h1><i class="las la-coffee"></i><br>Boardroom Café</h1>
 						<h2>Local Restaurant</h2>
 					</div>
 				</div>
 
 				<div class="card-left" style="background-image: url(assets/logos/ub.jpg);" onclick="window.open('ub.html', '_self')">
 					<div class="tile-text-box">
-						<h1>Urban<br>Beginnings</h1>
+						<h1><i class="las la-tshirt"></i><br>Urban Beginnings</h1>
 						<h2>Clothing Brand, Canada</h2>
 					</div>
 				</div>
 
 				<div class="card-right" style="background-image: url(assets/logos/rt.jpg);" onclick="window.open('rt.html', '_self')">
 					<div class="tile-text-box">
-						<h1>Rose<br>Travels</h1>
+						<h1><i class="las la-plane"></i><br>Rose Travels</h1>
 						<h2>Travel Agency</h2>
 					</div>
 				</div>
 
 				<div class="card-left" style="background-image: url(assets/logos/mathaki.jpg);" onclick="window.open('mathaki.html', '_self')">
 					<div class="tile-text-box">
-						<h1>Mathaki</h1>
+						<h1><i class="las la-pizza-slice"></i><br>Mathaki</h1>
 						<h2>Restaurant Chain, Saudi Arabia</h2>
 					</div>
 				</div>
 
 				<div class="card-right" style="background-image: url(assets/logos/bf.jpg);" onclick="window.open('bf.html', '_self')">
 					<div class="tile-text-box">
-						<h1>Borinquen<br>Freerunning</h1>
+						<h1><i class="las la-running"></i><br>Borinquen Freerunning</h1>
 						<h2>Parkour Organization</h2>
 					</div>
 				</div>
 
 				<div class="card-left" style="background-image: url(assets/logos/md.jpg);" onclick="window.open('md.html', '_self')">
 					<div class="tile-text-box">
-						<h1>MusikDream</h1>
+						<h1><i class="las la-music"></i><br>MusikDream</h1>
 						<h2>Music Production House</h2>
 					</div>
 				</div>
 
 				<div class="card-right" style="background-image: url(assets/logos/cse.jpg);" onclick="window.open('cse.html', '_self')">
 					<div class="tile-text-box">
-						<h1>Cinema Stock<br>Exchange</h1>
-						<h2>Online Crowdsourcing<br>(Movies)</h2>
+						<h1><i class="las la-film"></i><br>Cinema Stock Exchange</h1>
+						<h2>Online Crowdsourcing (Movies)</h2>
 					</div>
 				</div>
 
@@ -157,14 +125,8 @@
 
 
 
-			<div class="footer">
-
-				<a class="highlight" href="#top">Go to top</a>
-
-				<p class="title">
-					<span style="opacity: 30%;">Designed & Developed by<br>
-					©Ronak Laungani 2020</span>
-				</p>
+			<div id="footer">
+				<script src="footer.js"></script>
 			</div>
 
 		</div>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MYSPORT.COM</title>
+	<link rel="stylesheet" type="text/css" href="style-desktop.css">
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<video autoplay muted loop id="bg-video">
+  		<source src="assets/bg-vid.mp4" type="video/mp4">
+	</video>
+
+	<div id="main-tint"></div>
+
+	<div class="mobilealert">
+			<p class="body-text">Oh shiii...!<br>This webpage is not available on mobile devices. Please use a desktop or a tablet to view this page.</p>
+	</div>
+
+
+	<div class="main-content">
+
+		<div id="cart-window">
+			
+			<div id="cart">
+				<h1>Your Cart<i class="las la-window-close" style="float: right; cursor: pointer;" onclick="closecart()"></i></h1>
+
+				<p class="body-text" id="cart-empty">Your cart is empty</p>
+
+				<table id="cart-table">
+
+					<script src="cartdata.js" type="text/javascript"></script>
+
+					<!-- <tr class="spacer"></tr>
+					<tr>
+						<td class="item-details">
+							<table><tr><td class="cart-item"><span id="cart-data-qty">1</span> x <span id="cart-data-jersey-type">Soccer Jersey</span></td><td><i class="las la-trash-alt"></i></td></tr>
+								<tr><td class="cart-description"><span id="cart-data-color">Royal Blue</span> • <span id="cart-data-emblem">Manchester United</span></td></tr>
+								<tr><td class="cart-description">Name: <span id="cart-data-text">Ronak</span> • Jersey No: <span id="cart-data-number">15</span> • <span id="cart-data-size">XL</span></td></tr>
+							</table>
+						</td>
+						<td class="cart-price">$29.99</td>
+					</tr> -->
+					
+				</table>
+			</div>
+
+			<div id="billing">
+
+				
+					<table id="billing-box">
+						<tr><td class="cart-description"><h2>Total</h2></td><td class="small-amounts" id="total"><h2>$0</h2></td></tr>
+						<tr><td class="cart-description">Taxes</td><td class="small-amounts" id="tax-id">$0</td></tr>
+						<tr><td class="cart-description" id="delivery-text-id">Delivery</td><td class="small-amounts" id="delivery-id">$2.00</td></tr>
+						<tr class="spacer2"></tr>
+						<tr><td style="width: 50%;"><h2>Order Total</h2></td><td id="total"><h2 id="order-total">$63.98</h2></td></tr>
+						<tr class="spacer2"></tr>
+						<tr><td style="width: 50%;"></td><td><button class="button-1" style="width: 100%;">Checkout</button></td></tr>
+					</table>
+			
+				
+			</div>
+
+		</div>
+
+		<div id="about-window">
+			
+			<div id="about">
+				<h1>About<i class="las la-window-close" style="float: right; cursor: pointer;" onclick="closeabout()"></i></h1>
+
+				<p class="body-text" style="font-size: 14px;">Hi! Thank you for stopping by to view my project. I'm Ronak Laungani and this project is to demonstrate my design and algorithmic abilities in front-end development. This is the first of many projects I've planned, where my aim is to not only design beautiful and intuitive web interfaces, but also to make sure they work. This project, for instance has following functionalities:<br><br>
+				 - The id of every selection you make is captured to give appropriate feedback at the top throughout the process.<br>
+				 - You can jump back to any previous steps and your selection will still be maintained.<br>
+				 - The color of the jersey is being updated dynamically with code based on your selection.<br>
+				 - The cart is programmed with all required calculations and it updates itself whenever a jersey is added or removed from the cart. Cart item also captures the required ids to show selected jersey, color, name, etc.<br>
+				 - The cart provides functionalities like free shipping above an order of certain amount.<br><br>
+
+				 I'm constantly updating my projects and you can see upcoming changes here in the future.<br>
+				 Liked this project? Check out more of my work at <a href="http://www.ronaklaungani.com" style="color: white;">www.ronaklaungani.com</a><br><br>
+
+				 <b>Watch the presentation video for this product<br><br></b></p>
+
+				 <video controls autoplay muted loop width="100%" style="padding-bottom: 40px;">
+	  					<source src="assets/mysport.mp4" type="video/mp4">
+	  			</video>
+			</div>
+
+		</div>
+
+
+		<p class="sitename" style="animation-delay: 1.4s;" onclick="window.open('index.html', '_self')">MYSPORT.COM</p>
+		<div class="top-menu" style="animation-delay: 1.4s;">
+			<h2 class="about" onclick="openabout()">About</h2>
+			<div class="thecartset">
+				<img src="assets/cart.svg" class="all-icons" onclick="opencart()">
+				<p id="cart-counter">0</p>
+			</div>
+		</div>
+
+
+		<div class="process-area">
+
+			<script type="text/javascript" src="javascript1.js">
+
+			</script>
+
+			<div id="jersey-box-2" style="display: none;">
+				<img src="assets/red-back.png" class="jersey2" id="jersey2id">
+				<p id="jersey-text"></p>
+				<p id="jersey-number"></p>
+			</div>
+
+			<div id="jersey-box-1" style="display: none;">
+				<img src="assets/barc.svg" id="emblem" style="opacity: 0%;">
+				<img src="assets/red-front.png" class="jersey1" id="jersey1id">
+			</div>
+
+			<div id="home-div" style="display: block;">
+
+				<h1 style="animation-delay: 1.6s;">Put your name on it</h1>
+				<p class="body-text" style="animation-delay: 1.8s;">Add your name on your favourite jersey, delivery on us.</p>
+				<button class="button-1" style="margin-top: 30px; animation-delay: 2s;" onclick="openstepone()">Get Started</button>
+
+			</div>
+
+			<div id="trainstops" style="display: none; animation-delay: 0s;">
+
+					<table class="tables" style="margin-left: -20px">
+						<tr>
+							<td><div class="nav-tab-inactive home-nav-tab" onclick="openhome()"><img class="home-nav-tab-icon" src="assets/home.svg"><p class="small-text">Go to Home</p></div></td>
+							<td style="width: 1px;"><div><img src="assets/line.svg" style="width: 1px; margin: 5px 10px 0px 10px;"></div></td>
+							<td><div class="nav-tab-active" id="step-1-id"><img class="nav-tab-icons" src="assets/volley.svg" id="step-1-icon-id"><div id="ts-1-id" class="trainstop-station">1</div><p class="small-text" id="step-1-text">Select Sport</p></div></td>
+							<td><div class="nav-tab-inactive" id="step-2-id"><img class="nav-tab-icons" src="assets/volley.svg" id="step-2-icon-id"><div id="ts-2-id" class="trainstop-station">2</div><p class="small-text" id="step-2-text">Select Emblem</p></div></td>
+							<td><div class="nav-tab-inactive" id="step-3-id"><div id="ts-3-id" class="trainstop-station">3</div><p class="small-text" id="step-3-text">Select Color</p></div></td>
+							<td><div class="nav-tab-inactive" id="step-4-id"><img class="nav-tab-icons" src="assets/volley.svg"><div class="trainstop-station">4</div><p class="small-text" id="step-4-text">Add Your Customs</p></div></td>
+						</tr>
+					</table>
+					
+			</div>
+
+			<div id="step-one-div" style="display: none;">
+
+				<h1 style="animation-delay: 0.4s;">Select your sport</h1>
+					<table class="tables" style="animation-delay: 0.6s;">
+						<tr>
+							<td><div class="tab-active" id="soccer-id" onclick="selectthissport(this.id)"><img class="tab-icons" src="assets/soccer.svg"><p class="small-text">Soccer</p></div></td>
+							<td><div class="tab-inactive" id="volley-id" onclick="selectthissport(this.id)"><img class="tab-icons" src="assets/volley.svg"><p class="small-text">Volleyball</p></div></td>
+							<td><div class="tab-inactive" id="basketball-id" onclick="selectthissport(this.id)"><img class="tab-icons" src="assets/basketball.svg"><p class="small-text">Basketball</p></div></td>
+						</tr>
+						<tr>
+							<td><div class="tab-inactive" id="baseball-id" onclick="selectthissport(this.id)"><img class="tab-icons" src="assets/baseball.svg"><p class="small-text">Baseball</p></div></td>
+							<td><div class="tab-inactive" id="tt-id" onclick="selectthissport(this.id)"><img class="tab-icons" src="assets/tt.svg"><p class="small-text">Table-tennis</p></div></td>
+							<td><div class="tab-inactive" id="football-id" onclick="selectthissport(this.id)"><img class="tab-icons" src="assets/rugby.svg"><p class="small-text">Football</p></div></td>
+						</tr>
+					</table>
+
+				<button class="button-1" style="margin-top: 30px; animation-delay: 0.8s;" onclick="opensteptwo()">Next <i class="las la-arrow-right"></i></button>
+
+			</div>
+
+			<div id="step-two-div" style="display: none;">
+
+				<h1 style="animation-delay: 0.4s;">Choose your side</h1>
+					<table class="tables" style="animation-delay: 0.6s;">
+						<tr>
+							<td><div class="tab-active" id="blank-id" onclick="selectthisemblem(this.id)"><img class="tab-icons" src="assets/blank-disk.svg"><p class="small-text">Blank</p></div></td>
+							<td><div class="tab-inactive" id="manu-id" onclick="selectthisemblem(this.id)"><img class="tab-icons" src="assets/manu.svg"><p class="small-text">Manchester United</p></div></td>
+							<td><div class="tab-inactive" id="manc-id" onclick="selectthisemblem(this.id)"><img class="tab-icons" src="assets/manc.svg"><p class="small-text">Manchester City</p></div></td>
+							<td><div class="tab-inactive" id="rma-id" onclick="selectthisemblem(this.id)"><img class="tab-icons" src="assets/rma.svg"><p class="small-text">Real Madrid</p></div></td>
+						</tr>
+						<tr>
+							<td><div class="tab-inactive" id="ars-id" onclick="selectthisemblem(this.id)"><img class="tab-icons" src="assets/ars.svg"><p class="small-text">Arsenal</p></div></td>
+							<td><div class="tab-inactive" id="barc-id" onclick="selectthisemblem(this.id)"><img class="tab-icons" src="assets/barc.svg"><p class="small-text">Barcelona</p></div></td>
+							<td><div class="tab-inactive" id="liv-id" onclick="selectthisemblem(this.id)"><img class="tab-icons" src="assets/liv.svg"><p class="small-text">Liverpool</p></div></td>
+							<td><div class="tab-inactive" id="chel-id" onclick="selectthisemblem(this.id)"><img class="tab-icons" src="assets/chel.svg"><p class="small-text">Chelsea</p></div></td>
+						</tr>
+					</table>
+
+				<button class="button-1" style="margin-top: 30px; animation-delay: 0.8s;" onclick="openstepthree()">Next <i class="las la-arrow-right"></i></button>
+
+			</div>
+
+			<div id="step-three-div" style="display: none;">
+
+				<h1 style="animation-delay: 0.4s;">Choose your Color</h1>
+					<table class="tables" style="animation-delay: 0.6s;">
+						<tr>
+							<td><div class="tab-active" id="white-id" onclick="selectthiscolor(this.id)"><div class="color-disks" style="background-color: #ffffff;"></div><p class="small-text">White</p></div></td>
+							<td><div class="tab-inactive" id="blue-id" onclick="selectthiscolor(this.id)"><div class="color-disks" style="background-color: #213F84;"></div><p class="small-text">Royal Blue</p></div></td>
+						</tr>
+						<tr>
+							<td><div class="tab-inactive" id="red-id" onclick="selectthiscolor(this.id)"><div class="color-disks" style="background-color: #AC0A0A;"></div><p class="small-text">Manchester Red</p></div></td>
+						</tr>
+					</table>
+
+				<button class="button-1" style="margin-top: 30px; animation-delay: 0.8s;" onclick="openstepfour()">Next <i class="las la-arrow-right"></i></button>
+
+			</div>
+
+			<div id="step-four-div" style="display: none;">
+
+				<h1 style="animation-delay: 0.4s;">Make it yours</h1>
+
+				<p class="body-text" style="animation-delay: 0.6s;">Add your name, jersey number & select your size</p>
+
+				<input style="animation-delay: 0.6s;" type="text" name="jerseyname" placeholder="Enter your name here" class="input name" id="jersey-name-id" onkeyup="typethename()" maxlength="12"><input style="animation-delay: 0.6s;" type="tel" name="jerseynumber" placeholder="No." class="input number" id="jersey-no-id" onkeyup="typethenumber()" maxlength="2">
+
+				<p class="small-text" style="text-align: left; width: 300px; cursor: pointer; text-decoration: underline; animation-delay: 0.6s;" id="changetextcolor" onclick="changetexttoblack()">Change text color to Black</p>
+
+					<table class="tables" style="padding-top: 20px; animation-delay: 0.8s;">
+						<tr>
+							<td><div class="tab-active" id="xs-id" onclick="selectthissize(this.id)"><div class="color-disks">XS</div><p class="small-text">Shoulder: 32in</p></div></td>
+							<td><div class="tab-inactive" id="m-id" onclick="selectthissize(this.id)"><div class="color-disks">M</div><p class="small-text">Shoulder: 40in</p></div></td>
+							<td><div class="tab-inactive" id="xl-id" onclick="selectthissize(this.id)"><div class="color-disks">XL</div><p class="small-text">Shoulder: 48in</p></div></td>
+						</tr>
+						<tr>
+							<td><div class="tab-inactive" id="s-id" onclick="selectthissize(this.id)"><div class="color-disks">S</div><p class="small-text">Shoulder: 36in</p></div></td>
+							<td><div class="tab-inactive" id="l-id" onclick="selectthissize(this.id)"><div class="color-disks">L</div><p class="small-text">Shoulder: 44in</p></div></td>
+							<td><div class="tab-inactive" id="xxl-id" onclick="selectthissize(this.id)"><div class="color-disks">XXL</div><p class="small-text">Shoulder: 52in</p></div></td>
+						</tr>
+					</table>
+
+				<button class="button-1" id="add-to-cart-bttn" style="margin-top: 30px; animation-delay: 1s;" onclick="addtocart()">Add XS to the cart</button>
+
+			</div>
+
+
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+		
+	</div>
+</body>
+</html>

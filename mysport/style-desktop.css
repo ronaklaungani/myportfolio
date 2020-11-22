@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Bebas+Neue&family=Krona+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap');
+
+
+* { margin: 0px;
+	padding: 0px; }
+
+
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -10;
+  filter: blur(0px);
+  animation: opacityanimation;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+#main-tint { background-color: black;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	opacity: 50%;
+	z-index: -1;
+	animation: opacityanimation50;
+	animation-duration: 5s;
+	animation-fill-mode: forwards; }
+
+.main-content { padding: 60px;
+				display: block; }
+
+.sitename { font-family: 'Krona One';
+			color: white;
+			letter-spacing: -2.6px;
+			font-size: 22px;
+			opacity: 0%;
+			animation: opacityanimation;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			cursor: pointer;
+			 }
+
+.top-menu { float: right;
+			margin-top: -30px;
+			z-index: +10;
+			opacity: 0%;
+			animation: opacityanimation;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			 }
+
+.about { float: left;
+			padding: 10px 30px 10px 30px;
+			transition-duration: 0.2s;
+			cursor: pointer;
+			 }
+
+.about:hover { float: left;
+			padding: 5px 30px 15px 30px;
+			transition-duration: 0.2s;
+			 }
+
+
+.thecartset { float: right;
+	margin: 0px 10px 10px 10px;
+				transition-duration: 0.2s;
+				cursor: pointer; }
+
+.thecartset:hover { float: right;
+					margin: -5px 10px 15px 10px;
+					transition-duration: 0.2s; }
+
+#cart-counter { font-family: 'Poppins';
+				font-size: 12px;
+				font-weight: 200;
+				text-align: center;
+				color: white;
+				background-color: red;
+				position: relative; 
+				float: left;
+				width: 0px;
+				height: 0px;
+				border-radius: 9px;
+				margin-right: -90px;
+				display: block;
+
+				animation: zoomout;
+			animation-duration: 0.4s;
+			animation-fill-mode: forwards;
+			animation-delay: 0s;
+				 }
+
+
+.process-area { display: block;
+				margin-top: 240px;
+				z-index: -10;
+				 }
+
+
+
+h1 { font-family: 'Krona One';
+			color: white;
+			font-size: 40px;
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			opacity: 0%;
+			animation: opacityanimation;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			animation-delay: 0.2s; }
+
+h2 { font-family: 'Krona One';
+			color: white;
+			font-size: 14px;
+			opacity: 0%;
+			animation: opacityanimation;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			animation-delay: 0.2s;
+			 }
+
+.body-text { font-family: 'Poppins';
+				color: white;
+				font-weight: 200;
+				letter-spacing: 1px;
+				padding: 20px 0px 2px 0px;
+				font-size: 16px;
+				opacity: 0%;
+			animation: opacityanimation;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			animation-delay: 0.4s; }
+
+.small-text { font-family: 'Poppins';
+				color: white;
+				font-weight: 300;
+				letter-spacing: 1px;
+				padding: 6px 0px 0px 0px;
+				font-size: 12px;
+				text-align: center;
+				line-height: 16px;
+				text-decoration: none;
+			 }
+
+
+.button-1 { text-decoration: none;
+			background-color: transparent;
+			border-width: 2px;
+			border-color: white;
+			color: white;
+			font-family: 'Krona One';
+			padding: 5px 20px 5px 20px;
+			font-size: 16px;
+			margin: 10px 0px 10px 0px;
+			transition-duration: 0.2s;
+			opacity: 0%;
+			animation: opacityanimation;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			animation-delay: 0.6s;
+			 }
+
+.button-1:hover { text-decoration: none;
+			background-color: white;
+			border-width: 2px;
+			border-color: white;
+			color: black;
+			font-family: 'Krona One';
+			padding: 2px 20px 8px 20px;
+			font-size: 16px;
+			margin: 10px 0px 10px 0px;
+			cursor: pointer;
+			transition-duration: 0.2s;
+			 }
+
+.tab-active { width: 140px;
+			background-color: #ffffff30;
+			border-radius: 2px;
+			padding: 10px 5px 5px 5px;
+			margin: 4px; }
+
+.tab-inactive { width: 140px;
+			background-color: #ffffff00;
+			border-radius: 2px;
+			padding: 10px 5px 5px 5px;
+			opacity: 50%;
+			margin: 4px;
+			cursor: pointer;
+			transition-duration: 0.2s; }
+
+.tab-inactive:hover { 
+			opacity: 100%;
+			transition-duration: 0.2s; }
+
+
+#trainstops { padding: 20px 0px 40px 0px;
+				margin-top: -240px;
+				opacity: 0%;
+			animation: opacityanimation;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			animation-delay: 0s; }
+
+.nav-tab-active { width: 70px;
+			border-radius: 2px;
+			padding: 10px 5px 5px 5px;
+			margin: 2px; }
+
+.nav-tab-inactive { width: 70px;
+			border-radius: 2px;
+			padding: 10px 5px 5px 5px;
+			opacity: 40%;
+			margin: 2px;
+			transition-duration: 0.2s; }
+
+.home-nav-tab { cursor: pointer;
+				 }			
+
+.home-nav-tab:hover { opacity: 100%; }
+
+.home-nav-tab-icon { width: 30px;
+				height: auto;
+				display: block;
+				margin-left: auto;
+  				margin-right: auto;
+  				padding-bottom: 5px; }
+
+
+.tab-icons { width: auto;
+				height: 40px;
+				display: block;
+				margin-left: auto;
+  				margin-right: auto;
+  				 }
+
+ .nav-tab-icons { width: auto;
+				height: 30px;
+				display: none;
+				margin-left: auto;
+  				margin-right: auto;
+  				padding-bottom: 5px;
+  				 }
+
+
+ .trainstop-station { background-color: white;
+ 						border-radius: 15px;
+ 						width: 30px;
+ 						height: 30px;
+ 						text-align: center;
+ 						line-height: 30px;
+ 						font-family: 'Krona One';
+ 						display: block;
+						margin-left: auto;
+  						margin-right: auto;
+  						margin-bottom: 4px; }
+
+
+ .color-disks {		border-radius: 25px;
+ 						width: 50px;
+ 						height: 50px;
+ 						display: block;
+						margin-left: auto;
+  						margin-right: auto;
+  						text-align: center;
+ 						line-height: 50px;
+ 						font-size: 20px;
+ 						color: white;
+ 						font-family: 'Krona One';
+  						 }
+
+.input { text-decoration: none;
+			font-family: 'Krona One';
+			font-size: 20px;
+			padding: 10px 15px 10px 15px;
+			background-color: transparent;
+			border-width: 2px;
+			border-color: white;
+			color: white;
+			
+			margin: 10px 20px 10px 0px; }
+
+.name { width: 300px; }
+
+.number { width: 100px; }
+
+
+
+
+
+
+
+.tables { padding-top: 30px;
+			opacity: 0%;
+			animation: opacityanimation;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			
+			 }
+
+.all-icons { width: 30px;
+				height: auto;
+				padding: 5px; }
+
+
+#step-one-div { opacity: 0%;
+			animation: opacityanimation;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			 }
+
+
+/*#jersey-box-1 { width: 34%;
+				height: auto;
+				float: right;
+				margin-right: -140px;
+				margin-top: -60px;
+				position: relative;
+				z-index: -1;
+
+				}*/
+
+#jersey-box-1 { width: 40%;
+				float: right;
+				margin-left: 48%;
+				margin-top: -60px;
+				position: absolute;
+				z-index: -1;
+				opacity: 0%;
+			animation: opacityanimation;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			animation-delay: 1s;
+				}
+
+#jersey-box-2 { width: 34%;
+				height: auto;
+				float: right;
+				margin-left: 60%;
+				margin-top: 300px;
+				position: absolute;
+				z-index: -1;
+				opacity: 0%;
+			animation: opacityanimation;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			animation-delay: 0s;
+
+				}
+
+.jersey1 { width: 100%;
+			height: auto;
+			position: relative;
+			margin-top: -45%;
+			z-index: -1;
+			filter: hue-rotate(0deg) saturate(0) brightness(2);
+			 
+ }
+
+ .jersey2 { width: 100%;
+			height: auto;
+			position: relative;
+			margin-top: -45%;
+			z-index: -1;
+			filter: hue-rotate(0deg) saturate(0) brightness(2);
+ }
+
+#emblem { height: 40px;
+			width: auto;
+			margin-left: 55%;
+			margin-top: 45%;
+			z-index: +1;
+			position: relative;
+			 }
+
+
+#jersey-text { font-family: 'Bebas Neue';
+				z-index: +1;
+				text-align: center;
+  				width: 60%;
+  				position: relative;
+  				color: white;
+  				font-size: 30px;
+  				letter-spacing: 1px;
+  				margin-top: -86%;
+  				margin-left: 20%;
+  				margin-right: 20%;
+				 }
+
+#jersey-number { font-family: 'Bebas Neue';
+				z-index: +1;
+				text-align: center;
+  				width: 100%;
+  				position: relative;
+  				color: white;
+  				font-size: 100px;
+  				letter-spacing: 1px;
+				 }
+
+
+
+
+
+
+#cart-window { position: fixed;
+				right: 0;
+				top: 0;
+				margin-right: -500px;
+				float: right;
+				width: 500px;
+				height: 100%;
+				margin-top: 0px;
+				background-color: #00000080;
+				backdrop-filter: blur(20px);
+				display: none;
+				z-index: +1;
+				animation: slideinfromright;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			animation-delay: 0s;
+
+				 }
+
+#about-window { position: fixed;
+				right: 0;
+				top: 0;
+				margin-right: -500px;
+				float: right;
+				width: 500px;
+				height: 100%;
+				margin-top: 0px;
+				background-color: #00000080;
+				backdrop-filter: blur(20px);
+				display: none;
+				z-index: +1;
+				animation: slideinfromright;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			animation-delay: 0s;
+
+				 }
+
+#cart { padding: 40px 30px;
+		height: 100%;
+		width: 440px;
+		position: fixed;
+		overflow-x: hidden;
+  			overflow-y: scroll;
+ 			 white-space: nowrap;
+		 }
+
+#about { padding: 40px 30px;
+		height: 100%;
+		width: 440px;
+		position: fixed;
+		overflow-x: hidden;
+  			overflow-y: scroll;
+ 			 /*white-space: nowrap;*/
+		 }
+
+#cart-empty { display: block;
+				width: 100px; }
+
+#cart-table { padding: 20px 0px;
+				width: 440px;
+				display: inline-block;
+				overflow: visible;
+				margin-bottom: 240px;
+				border: solid;
+				border-color: #ffffff;
+				border-width: 0px 0px 1px 0px;
+				 }
+
+.spacer { height: 20px; }
+
+.spacer2 { height: 10px; }
+
+.cart-item { font-family: 'Poppins';
+				color: white;
+				font-weight: 600;
+				letter-spacing: 1px;
+				padding: 6px 0px;
+				font-size: 16px;
+				line-height: 18px;
+				text-decoration: none;
+				width: 100%;  }
+
+.cart-description { font-family: 'Poppins';
+				color: white;
+				font-weight: 300;
+				letter-spacing: 1px;
+				padding: 2px 0px;
+				font-size: 12px;
+				line-height: 18px;
+				text-decoration: none;
+				opacity: 50%;  }
+
+.la-trash-alt { 
+				color: white;
+				padding: 0px 20px;
+				font-size: 24px;
+				cursor: pointer;
+				text-decoration: none;
+				transition-duration: 0.2s;
+				width: 20px;
+				opacity: 30%;
+			  }
+
+.la-trash-alt:hover { 
+				opacity: 100%;
+				transition-duration: 0.2s;
+			  }
+
+
+.cart-price { font-family: 'Poppins';
+				color: white;
+				font-weight: 300;
+				letter-spacing: 1px;
+				top: 0;
+				font-size: 16px;
+				line-height: 18px;
+				text-decoration: none;
+				width: 20%;
+				border-color: white;
+				border: solid;
+				border-width: 0px 0px 0px 0.5px;
+				padding-left: 10px; 
+				text-align: right;
+				
+				 }
+
+
+.item-details { width: 80px; }
+
+
+
+
+#billing { width: 100%;
+			height:200px;
+			bottom: 0;
+			position: fixed;
+			background-color: #000000;
+			display: block;
+			opacity: 94%; }
+
+
+
+#billing-box { padding: 0px;
+				margin: 20px 40px;
+				width: 420px; }
+
+
+#total { float: right; width: 50%;
+				text-align: right; }
+
+
+.small-amounts { font-family: 'Poppins';
+				color: white;
+				font-weight: 300;
+				letter-spacing: 1px;
+				padding: 2px 0px;
+				font-size: 12px;
+				line-height: 18px;
+				text-decoration: none;
+				opacity: 50%;
+				float: right;
+				text-align: right;  }
+
+
+.mobilealert { display: none; }
+
+
+
+
+
+
+
+
+@keyframes opacityanimation {
+	0% { opacity: 0%; }
+
+	100% { opacity: 100%; }
+}
+
+
+@keyframes opacityanimation50 {
+	0% { opacity: 100%; }
+
+	100% { opacity: 50%; }
+}
+
+
+
+@keyframes slideinfromright {
+	0% { margin-right: -500px; }
+
+	100% { margin-right: 0px; }
+}
+
+
+@keyframes zoomout {
+	0% { width: 0px;
+			height: 0px; }
+
+	80% { width: 20px;
+			height: 20px; }
+
+	100% { width: 18px;
+			height: 18px; }
+}
+
+
+
+@media only screen and (max-width: 600px)
+  {
+
+  	.main-content { display: none;
+  					 }
+
+  	.mobilealert { display: block;
+  					padding: 60px; }
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+

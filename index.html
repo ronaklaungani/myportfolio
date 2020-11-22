@@ -3,35 +3,24 @@
 <head>
 
 	<title>Ronak Laungani</title>
-	<link rel="stylesheet" type="text/css" href="style-desktop.css">
+	<link rel="stylesheet" type="text/css" href="style-desktop-dark.css">
 	<link rel="stylesheet" type="text/css" href="style-mobile.css">
 	<link rel="stylesheet" type="text/css" href="style-tablet.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-	<link rel="icon" type="image/svg" href="assets/R.svg">
-
+	<link rel="icon" type="image/svg" href="assets/favicon.svg">
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+	<meta property="og:image" content="assets/cp/cp17.png" />
+	<meta property="og:title" content="Ronak Laungani's Portfolio" />
+	<meta property="og:description" content="Four years of experience in shipping high quality products, compiled at one place." />
 
 </head>
 <body>
 
-
-	<img src="assets/R.svg" class="site-logo" onclick="window.open('index.html', '_self')">
-
-
+	<img src="assets/new-logo.svg" class="site-logo" onclick="window.open('index.html', '_self')">
 
 	<ul id="menu-list">
-					<li><a href="index.html" onclick="closemenu()">UI/UX</a></li>
-
-					<li><a href="motion.html" onclick="closemenu()">Motion</a></li>
-
-					<li><a href="logos.html" onclick="closemenu()">Logos</a></li>
-					
-					<li><a href="podcast.html" onclick="closemenu()">Podcast</a></li>
-
-					<li><a href="archive.html" onclick="closemenu()">Archives</a></li>
-
-					<li onclick="closemenu()" style="color: red; cursor: pointer;">Close Menu</li>
-
+		<script src="mobile-drop-down-menu.js"></script>
 	</ul>
 
 
@@ -43,31 +32,12 @@
 
 		<div id="col-1">
 
-
-			
-
 				<div class="page-header-bar" style="margin-top: 0px;">
-					<div class="jump-to-menu-bttn" id="menu-tag-id" style="margin-top: 0px;"><div class="title-inactive" style="float:right; margin-bottom: 20px; text-decoration: none; color: black;" onclick="openmenu()">Menu</div></div>
+					<div class="jump-to-menu-bttn" id="menu-tag-id" style="margin-top: 25px;"><div class="title-inactive" style="float:right; margin-bottom: 20px; text-decoration: none;" onclick="openmenu()">Menu</div></div>
 				</div>
-					
-					<script src="intro.js"></script>
-			
 
-
-
-			<div id="header-show">
-
-				<p class="title">Hi! I'm<br>Ronak Laungani,<br><i><span id="my-designation" onclick="changetext1()">Product Designer</span></i> by the day<br><i><span id="magic-words" onclick="changetext2()">sleep enthusiast</span></i> by the night.
-					<br>
-					<br>
-					<br>
-					<br>
-					View my <a class="highlight" href="https://drive.google.com/file/d/1zEQLlW3F_tTjjbpKD6gxL3yQglFLrxPA/view?usp=sharing" target="_blank">Résumé</a><br>
-				Contact me on<br>
-				<span class="highlight" style="cursor: pointer;" onclick="copy_function('mytext')" id="mytext">launganironak@gmail.com</span><br>
-			Connect with me on<br><a class="highlight" href="https://www.linkedin.com/in/ronaklaungani/" target="_blank">LinkedIn</a> or <a class="highlight" href="https://www.facebook.com/launganironak/" target="_blank">Facebook</a>.
-			<br>
-					
+			<div class="header-show" id="intro">
+				<script src="intro.js"></script>
 			</div>
 
 
@@ -82,63 +52,63 @@
 
 		<div id="col-2-2">
 			
-				<div class="page-heading" style="margin: 0px;"><span class="title-active" id="uiux-title-id" onclick="window.open('index.html', '_self')">UI/UX</span><span class="title-inactive" id="motion-title-id" onclick="window.open('motion.html', '_self')">Motion</span><span class="title-inactive" id="logo-title-id" onclick="window.open('logos.html', '_self')">Logos</span><span class="title-inactive" id="podcast-title-id" onclick="window.open('podcast.html', '_self')">Podcast</span><span class="title-inactive" id="archive-title-id" onclick="window.open('archive.html', '_self')">Archives</span></div>
+				<div class="page-heading" id="topNav" value="uiuxValue" style="margin-top: 0px;">
+					<script type="text/javascript" src="top-nav.js"></script>
+				</div>
 			
 
 			<div class="invisible-title sub-title">UI/UX Projects</div>
 
-			<div class="long-card" style="background-image: url(assets/cyberpassport-banner.jpg);" onclick="window.open('cyberpassport.html', '_self')">
-			</div>
+			<!-- <div class="long-card" style="background-image: url(assets/cyberpassport-banner.jpg);" onclick="window.open('cyberpassport.html', '_self')">
+			</div> -->
 
 
 
 			<div id="uiux">
 
-				<div class="card-left" style="background-image: url(assets/outhere.jpg);" onclick="window.open('outhere.html', '_self')">
+				<div class="card-left" style="background-image: url(assets/cyberpassport.jpg);" onclick="window.open('cyberpassport.html', '_self')">
 					<div class="tile-text-box">
-						<h1>OutHere<br>Location<br>Sharing</h1>
+						<h1><i class="las la-qrcode"></i><br>Cyberpassport</h1>
+						<h2>Funded through DoD CySP</h2>
+					</div>
+				</div>
+
+				<div class="card-right" style="background-image: url(assets/outhere.jpg);" onclick="window.open('outhere.html', '_self')">
+					<div class="tile-text-box">
+						<h1><i class="las la-map-marker"></i><br>OutHere Location Sharing</h1>
 						<h2>UI, Interaction & Motion Design</h2>
 					</div>
 				</div>
 
-				<div class="card-right" style="background-image: url(assets/scoring.jpg);" onclick="window.open('scoring.html', '_self')">
+				<div class="card-left" style="background-image: url(assets/scoring.jpg);" onclick="window.open('scoring.html', '_self')">
 					<div class="tile-text-box">
-						<h1>Soccer<br>Scoring<br>App</h1>
+						<h1><i class="las la-futbol"></i><br>Soccer Scoring App</h1>
 						<h2>UI, UX & Interaction</h2>
+					</div>
+				</div>
+
+				<div class="card-right" style="background-image: url(assets/crm.jpg);" onclick="window.open('crm.html', '_self')">
+					<div class="tile-text-box">
+						<h1><i class="las la-volleyball-ball"></i><br>Sports CRM</h1>
+						<h2>UX Design</h2>
 					</div>
 				</div>
 
 				<div class="card-left" style="background-image: url(assets/slink.jpg);" onclick="window.open('slink.html', '_self')">
 					<div class="tile-text-box">
-						<h1>Slink<br>Reminder<br>App</h1>
+						<h1><i class="las la-calendar-check"></i><br>Slink Reminder App</h1>
 						<h2>UX & Visual Design</h2>
 					</div>
 				</div>
 
-				<div class="card-right" style="background-image: url(assets/scheduler.jpg);" onclick="window.open('scheduler.html', '_self')">
-					<div class="tile-text-box">
-						<h1>Weekly<br>Schedule<br>Viewer</h1>
-						<h2>Interaction Design</h2>
-					</div>
-				</div>
-
 
 			</div>
 
 
 
-
-
-			<div class="footer">
-
-				<a class="highlight" href="#top">Go to top</a>
-
-				<p class="title">
-					<span style="opacity: 30%;">Designed & Developed by<br>
-					©Ronak Laungani 2020</span>
-				</p>
+			<div id="footer">
+				<script src="footer.js"></script>
 			</div>
-
 		</div>
 	</div>
 	

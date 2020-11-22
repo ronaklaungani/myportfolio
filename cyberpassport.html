@@ -3,60 +3,69 @@
 <head>
 
 	<title>Ronak Laungani</title>
-	<link rel="stylesheet" type="text/css" href="style-desktop.css">
+	<link rel="stylesheet" type="text/css" href="style-desktop-dark.css">
 	<link rel="stylesheet" type="text/css" href="style-tablet.css">
 	<link rel="stylesheet" type="text/css" href="style-mobile.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-	<link rel="icon" type="image/svg" href="assets/R.svg">
-
+	<link rel="icon" type="image/svg" href="assets/favicon.svg">
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+	<meta property="og:image" content="assets/cp/cp17.png" />
+	<meta property="og:title" content="Cyberpassport by Ronak Laungani" />
+	<meta property="og:description" content="University project funded through Department of Defense - Cyber Scholarship Program" />
 
 </head>
 <body>
 
-	<img src="assets/R.svg" class="site-logo-on-page" onclick="window.open('index.html', '_self')">
+
+	<img src="assets/new-logo.svg" class="site-logo-on-page" onclick="window.open('index.html', '_self')">
 
 	<div class="page-header-bar" style="margin-top: 0px;">
-		<div class="jump-to-menu-bttn" style="margin-top: 0px;"><a href="index.html" class="title-inactive" style="float:right; margin-bottom: 20px; text-decoration: none; color: black;">Back to Home</a></div>
+		<div class="jump-to-menu-bttn"><a href="index.html" class="title-inactive" style="float:right; margin-bottom: 20px; text-decoration: none;"><i class="las la-angle-left"></i> Back to UI/UX</a></div>
 	</div>
 
-	<img src="assets/cyberpassport-banner.jpg" style="width: 100%; height: auto; margin-top: 0px;">
+	<img src="assets/cp/cp1.png" style="width: 100%; height: auto; margin-top: 0px;" id="header-end">
+
+	<script type="text/javascript" src="projectlogics.js"></script>
+
+
+	<div id="segment-menu-main"><span class="title-active" id="about-segment-id" onclick="switchsegment(this.id)">About</span><span class="title-inactive" id="research-segment-id" onclick="switchsegment(this.id)">Research</span><span class="title-inactive" id="design-segment-id" onclick="switchsegment(this.id)">Design</span></div>
+
 	
+<div id="project-content">
+
+<div id="about-segment" style="display: block;">
+
 	<div class="text-body-box">
 
-		<p class="sub-title">Note</p>
-				<p class="body-text">Due to the project currently being in it's development phase, the design screens for the native app & the web app cannot be made public. I will post the designs as soon as the permissions come clear. Trust me, you'll be the first one to know. ;)
-				</p>
+		<h3>Cyberpassport</h3>
 
-				<h3>References</h3>
+		<p class="body-text"><br>
+			Cyberpassport is an effort to:<br>
+			<i class="las la-play"></i> Digitally organize the standardized cybersecurity curriculum drawn by the National Institute of Standards & Technology (NIST), US Department of Commerce<br>
+			<i class="las la-play"></i> Allow accredited organizations to organize workshops in compliance to the curriculum<br>
+			<i class="las la-play"></i> Allow students & cybersecurity enthusiasts to find and book these workshops.<br><br>
+			It is a research & product development project under Dr. Li-Chiou Chen, a professor at Pace University in New York City. The project is funded through a grant sponsored by the US Department of Defense - Cyber Scholarship Program.
+		</p>
 
-		<p class="body-text">To consult regarding my work on Cyberpassport, you can contact:</p>
-	
-		<div class="two-segment">		
-			<div class="segment-box"><p class="sub-title">Dr. Li-Chiou Chen (Project Lead)</p>
-				<p class="body-text">lchen@pace.edu</p>
-			</div>
-			<div class="segment-box"><p class="sub-title">Andreea Cotoranu</p>
-				<p class="body-text">acotoranu@pace.edu</p>
-			</div>
-		</div>
+	</div>
 
+	<img src="assets/cp/cp3.png" style="width: 100%; height: auto; margin-top: 0px;">
 
-		<h3>About</h3>
-
+	<div class="text-body-box">
 
 		<div class="three-segment">		
 			<div class="segment-box">
-				<p class="sub-title">Position</p>
-				<p class="body-text">UI/UX Designer</p>
+				<p class="sub-title">Role <i class="las la-magic"></i></p>
+				<p class="body-text">Product Designer</p>
 
-				<p class="sub-title">Duration</p>
+				<p class="sub-title">Duration  <i class="las la-clock"></i></p>
 				<p class="body-text">October 2019 - present</p>
 
 			</div>
 			<div class="segment-box">
 
-				<p class="sub-title">Team</p>
+				<p class="sub-title">Team <i class="las la-user-friends"></i></p>
 				<p class="body-text">Dr. Li-Chiou Chen (Project Lead)<br>
 				Prof. Andreea Cotoranu (Clinical Professor & Research)<br>
 				Prof. Praviin Mandhare (Development)<br>
@@ -64,42 +73,393 @@
 				Dan Citardi (Development)<br>
 				</p>
 			</div>
-			<div class="segment-box"><p class="sub-title">Platform(s)</p>
+			<div class="segment-box"><p class="sub-title">Platform(s)  <i class="las la-mobile"></i></p>
 				<p class="body-text">Native Android, iOS & Responsive Web App</p>
 
-				<p class="sub-title">Tools</p>
+				<p class="sub-title">Tools <i class="las la-pencil-ruler"></i></p>
 				<p class="body-text">Sketch, Zeplin, Illustrator, Photoshop, InDesign(for documentation)</p>
 
 			</div>
 		</div>
 
-	
-		<p class="body-text"><br>
-			Cyberpassport is an effort to:<br>
-			<span class="highlight">○</span> Digitaly organize the standardized cybersecurity curriculam drawn by the National Institute of Standards & Technology (NIST), US Department of Commerce<br>
-			<span class="highlight">○</span> Allow accredited organizations to organize workshops in compliance to the curriculam<br>
-			<span class="highlight">○</span> Allow students & cybersecurity enthusiasts to find and book these workshops.<br><br>
-			It is a research & product development project under Dr. Li-Chiou Chen, a professor at Pace University in New York City. The project is funded through a grant sponsored by the US Department of Defense - Cyber Scholarship Program.
-		</p>
+	</div>
+
+
+	<img src="assets/cp/cp2.png" style="width: 100%; height: auto;" class="big-bg-imgs-1">
+
+
+	<div class="text-body-box">
+
 
 		<h3>My Role</h3>
 	
 		<p class="body-text">
-			<span class="highlight">○</span> Designed a mobile-first application by conducting research, producing interactive designs & intuitive customer experience<br>
-			<span class="highlight">○</span> Crafted the style guidelines - color theory, iconography, typography, illustrations, imagery, graphic design & product documentation<br>
-			<span class="highlight">○</span> Worked closely with project sponsor, researchers & developers to collaborate on product strategy, conception, vision & use-cases<br>
-			<span class="highlight">○</span> Leveraged usability testing, feedback analysis & design critiques with internal stakeholders to identify customer insights.
+			<i class="las la-play"></i> Designed a mobile-first application by conducting research, producing interactive designs & intuitive customer experience<br>
+			<i class="las la-play"></i> Crafted the style guidelines - color theory, iconography, typography, illustrations, imagery, graphic design & product documentation<br>
+			<i class="las la-play"></i> Worked closely with project sponsor, researchers & developers to collaborate on product strategy, conception, vision & use-cases<br>
+			<i class="las la-play"></i> Leveraged usability testing, feedback analysis & design critiques with internal stakeholders to identify customer insights.
+		</p>
+
+		
+		<h3>References</h3>
+
+		<p class="body-text">To consult regarding my work on Cyberpassport, you can contact:</p>
+	
+		<div class="two-segment">		
+			<div class="segment-box"><p class="sub-title">Dr. Li-Chiou Chen (Project Lead)</p>
+				<p class="body-text"><i class="las la-envelope"></i> lchen@pace.edu</p>
+			</div>
+			<div class="segment-box"><p class="sub-title">Andreea Cotoranu</p>
+				<p class="body-text"><i class="las la-envelope"></i> acotoranu@pace.edu</p>
+			</div>
+		</div>
+
+		<p class="body-text"><br>
+		End of section. Let's go to the Research part.</p>
+	</div>
+
+</div>
+
+<div id="research-segment" style="display: none;">
+	<div class="text-body-box">
+
+		<h3>The Problem at Hand</h3>
+
+		<p class="body-text">The National Institute of Standards & Technology (NIST) has laid down a one-for-all curriculum (or syllabus) to standardize the education for cybersecurity in the United States. This is called the NICE framework. Accredited educational and professional institutions from around the United States adapt this curriculum to organize workshops to train students and cybersecurity enthusiasts. So we need to solve the following problems:<br><br>
+		<i class="las la-play"></i> Breakdown the NICE framework and design a curriculum page where users can easily explore and understand it<br>
+		<i class="las la-play"></i> Create a platform which allows the organizers to organize workshops and link them to the curriculum<br>
+		<i class="las la-play"></i> Allow users to explore these workshops and the curriculum associated with it<br>
+		<i class="las la-play"></i> Allow users to book these workshops through an online portal<br>
+		<i class="las la-play"></i> Allow users to build their profile so they can add the skills attained through the workshops<br>
+		<i class="las la-play"></i> Build tools to help the organizers in organizing the workshops, even for the on-ground operations.<br>
+		</p>
+
+		<h3>Understanding the Data</h3>
+
+		<p class="sub-title">Breaking down the curriculum</p>
+
+		<p class="body-text">The NICE framework drawn by the NIST is a very large and complicated system of nodes. It is very important for the user to understand the taxonomies of the curriculum before making a decision about their career choices. Hence, it is really important to give users a very easy portal to explore anything and everything about the framework. But before that, let's breakdown the data. Here's how this data was shared with us:
 		</p>
 
 	</div>
 
+	<img src="assets/cp/cp4.png" class="big-bg-imgs-2">
 
-	<div class="footer2">
-		<a class="highlight" href="#top">Go to top</a><a class="highlight" href="index.html" style="float: right;"> Back to UI/UX</a>
-		<p class="title">
-			<span style="opacity: 30%;">Designed & Developed by<br>
-			©Ronak Laungani 2020</span>
+	<div class="text-body-box">
+		<p class="body-text">
+		Now. Yes, I know this is a lot to organize. But that's what makes the problem so interesting to solve. There are 3000+ rows of data per sheet provided by the NIST for the framework. The framework has four main entities, each falling under the previous one in heirarchy:<br>
+
+		<span class="highlight">Speciality Areas <i class="las la-play"></i> Job Roles <i class="las la-play"></i> Competencies <i class="las la-play"></i> Knowledge/Skills/Abilities/Tasks (KSATs)</span><br>
+		<br>
+		Here's how these entities are related to each other:
 		</p>
+	</div>
+
+	<img src="assets/cp/cp5.png" class="big-bg-imgs-2">
+
+
+	<div class="text-body-box">
+		<p class="body-text">
+		And yes, those are the colors and shapes we are going to use to show the entities throughout the design system. Now that we understand how the framework has been designed, let's see how we decided upon "the most relevant entity".
+		</p>
+
+		<p class="sub-title">How does a user attain a Work Role?</p>
+
+		<p class="body-text">
+		Now the curriculum is known, the users are on the website; how do they learn and, most importantly get the certificate / badge / credit for learning these things? <span class="highlight">Workshops.</span><br>
+		<i class="las la-play"></i> Professional and educational institutions can organize workshops, and link the curriculum to it.<br>
+		<i class="las la-play"></i> The users attend this workshop, and the linked curriculum gets added to their profile.
+		</p>
+
+		<img src="assets/cp/cp9.png" class="text-body-img-trans">
+
+
+		<p class="sub-title">How can one link the curriculum to a workshop?</p>
+
+		<p class="body-text">
+		Before we go ahead, it's really important to figure out the most relevant entity. The one users will understand the quickest and find easier to navigate with. Will the user search for workshops based on the Work Roles it covers? Or is that too broad?<br>
+		After weeks of discussion with the team and weighing all the metrics, we decided that <span class="highlight">"Competency is the most relevant entity".</span> And for the following reasons:<br>
+		<br>
+		<i class="las la-play"></i> Most importantly - during a workshop, a Work Role is taught by covering the competencies; but not all competencies are covered during each workshop. Hence a user might cover "some" competencies of a Work Role<br>
+		<i class="las la-play"></i> Competencies serve as granular "chapters" for each Work Role, but are not too granular like KSATs<br>
+		<i class="las la-play"></i> This means the user can have a granular understanding of the Work Role and will approach the Work Role like students approach a course - a series of chapters<br>
+		<i class="las la-play"></i> It is less complicated to use it as a filtering or sorting factor on the home page. Meaning: the user can filter the workshops based on Competencies and find the one that fits their interest.<br>
+		<br>
+		Hence, while creating a workshop, the organizing institute can <span class="highlight">link the competencies to the workshop.</span> And when the users attend this workshop, these linked competencies get added to their profile - where they can keep track of their progress and share their profile with potential recruiters.
+		</p>
+
+	</div>
+
+	<img src="assets/cp/cp7.png" class="big-bg-imgs-2">
+
+
+	<div class="text-body-box">
+
+
+		<p class="sub-title">How can users build their profile?</p>
+
+		<p class="body-text">
+		Our users will be working hard, attending hours of workshops to attain competencies that will eventually add up to a work role. To make this process more rewarding, I focused hard to <span class="highlight">gamify</span> the whole product experience. As a part of this effort, I introduced what we named as the <span class="highlight">Career Path.</span><br>
+		It is a section where the users can plan, follow and keep a track of their cybersecurity career. The section has three main parts:<br>
+		<i class="las la-play"></i><span class="highlight"> My Work Roles:</span> A list of all Work Roles, with a tracker for each showing the total number of competencies required and the number of competencies completed by the user.<br>
+		<i class="las la-play"></i><span class="highlight"> My Focus List:</span> This feature is expected to help our users in a major way (Usability studies are going on as I write this). We've provided a section where users can add competencies they need to focus on. Our smart algorithm then suggests workshops and organizations based on the user's focus list. The user is also notified when a new workshop related to their focus list is posted.<br>
+		<i class="las la-play"></i><span class="highlight"> My Following List:</span> Users can follow organizations to get notified whenever a new workshop is posted by that organization.<br>
+		<br>
+		These three features help the user to have a focused approach towards what they want to achieve.
+		</p>
+
+	</div>
+
+	<img src="assets/cp/cp8.png" class="big-bg-imgs-2">
+
+
+	<div class="text-body-box">
+
+		<p class="sub-title">Building tools for the organizers.</p>
+
+		<p class="body-text">
+		Our team at Cyberpassport strongly believed and shared the enthusiasm of teaching with the organizations. Hence, we wanted to build the right tools for them so their work could be done in a much easier and proficient way. Here are few of the features we designed specifically for our organizers:<br>
+		<br>
+		<i class="las la-play"></i><span class="highlight"> Simplified forms</span> to create workshops and easily link competencies.<br>
+		<i class="las la-play"></i><span class="highlight"> Team builder</span> to allow the organization admin to build and manage a team that can assist in organizing as well as conducting workshops.<br>
+		<i class="las la-play"></i><span class="highlight"> QR code scanner</span> built right in their Cyberpassport mobile app so they can check-in and check-out the workshop attendees at the venue without the need of a desktop.<br>
+		<i class="las la-play"></i><span class="highlight"> Manage Registration</span> from anywhere. Add new registrations on the go with the the Cyberpassport mobile app.
+		</p>
+
+		<h3>Presets</h3>
+
+		<p class="body-text">
+		When I joined the team, there was already a website in existence, like a proof of concept:</p>
+	</div>
+
+	<img src="assets/cp/cp6.png" class="big-bg-imgs-2">
+
+	<div class="text-body-box">
+		<p class="body-text">
+		My job on arrival was to improve the User Experience of the product in terms of end-to-end experience, information architecture, navigation and UI Design. As we already know by now, it is a data heavy product and hence it becomes very important that the users understand this data. That, was my role - improve the understanding of the product along with giving it a visual identity. I was also given the liberty to rethink features and suggest new ones if needed.<br>
+		</p><br><br>
+	
+		<p class="body-text">End of section. Let's get to the Design part.</p>
+
+		</div>
+	</div>
+
+	<div id="design-segment" style="display: none;">
+		<div class="text-body-box">
+
+			<h3>Design</h3>
+
+			<p class="body-text">View a Click-through Prototype for <a href="https://www.sketch.com/s/cee4df0a-8bc6-43e5-9a22-934517d113c1/a/2d03MQ/play" target="_blank" class="highlight">Native Mobile <i class="las la-external-link-square-alt"></i></a> and for <a href="https://www.sketch.com/s/57c758c7-4fcd-4ee9-98e9-ebffa2066147/a/YkKL1M/play" target="_blank" class="highlight">desktop <i class="las la-external-link-square-alt"></i></a></p>
+
+			<p class="sub-title">Functional Requirements.</p>
+
+			<p class="body-text">
+		Now that we are clear about the features (from the Research section) that need to be a part of our system, let's define our functional requirements:<br>
+		<i class="las la-play"></i> Organizers can create a workshop on the desktop web app & link competencies to it<br>
+		<i class="las la-play"></i> Users approved by the organizers can also create workshops<br>
+		<i class="las la-play"></i> Users can browse through the list of workshops based on competencies, location and time of the workshop<br>
+		<i class="las la-play"></i> Users can register for the workshops online<br>
+		<i class="las la-play"></i> Each user should have a unique QR code - to be scanned at the workshop venue<br>
+		<i class="las la-play"></i> The system should update the user's profile with obtained competencies after every workshop<br>
+		<i class="las la-play"></i> User should be able to plan their workshops under "My Career Path".
+		<br>
+		<br>
+		Keeping of all the functionalities in mind, I divided the product into four main sections to draw up the navigation. 
+		</p>
+
+	</div>
+
+	<img src="assets/cp/cp10.png" class="big-bg-imgs-2">
+
+	<div class="text-body-box">
+
+		<p class="body-text"><span class="highlight">For both desktop web and native mobile, we take advantage of this segmentation of functionalitites to provide a better navigation.</span></p>
+
+
+		<p class="sub-title">Low-fidelity Sketches</p>
+
+		<img src="assets/cp/cp-wf-1.jpg" class="text-body-img">
+		<p class="body-text caption"><i class="las la-play"></i>  Initial wireframes to conceptualize the product.</p>
+
+
+		<p class="sub-title">Quick Mock-up</p>
+
+		<p class="body-text">My design approach involves getting a lot of insights from the users and stakeholders early on. I like to quickly mock-up my ideas and give a prototype in the hands of the users to gain valuable feedback in the form of usability testing results. I also keep iterating my designs during this process.</p>
+
+		<p class="sub-title">Initial Mock-up</p>
+
+		<p class="body-text">After conducting heuristic analysis of the existing product, and weighing all the functional requirements, I designed this <a href="https://www.sketch.com/s/q7xw3/v/1K59Dw/a/2d03MQ/play" target="_blank" class="highlight">Initial Mock-up <i class="las la-external-link-square-alt"></i></a></p>
+
+		<p class="sub-title">Initial Stakeholder Feedback</p>
+
+		<p class="body-text"><i class="las la-play"></i> The overall design is good, the colors are interactive and the layout looks professional<br>
+ 		<i class="las la-play"></i> The product looks more event driven, like eventbrite<br>
+ 		<i class="las la-play"></i> It needs to be more user focused where users can explore, plan and build their cybersecurity profile. It should be more about user progress.<br></p>
+
+ 		<img src="assets/cp/cp-wf-2.jpg" class="text-body-img">
+		<p class="body-text caption"><i class="las la-play"></i>  Updated wireframes based on feedback.</p>
+
+			<p class="sub-title">1 - <span class="body-text">The opening screen of the app allows the user to proceed without a log-in. This allows the user to explore the app before committing to being a user. On this screen, the user can explore work roles and choose competencies to filter their home screen results. This helps the software to suggest relevant workshops based on user choices.</span></p>
+
+			<p class="sub-title">2 - <span class="body-text">The updated design has a dashboard at the top on the home page. This is an attempt to make the app more about the user and their progress. User can check their progress for two of their ongoing work roles.</span></p>
+
+			<p class="sub-title">3 - <span class="body-text">This also allows us the space to add an easy access button to the unique QR code.</span></p>
+
+			<p class="sub-title">4 - <span class="body-text">On the Home page, we display the most relevant workshops for the user, filtered by selected location and competencies.</span></p>
+
+			<p class="sub-title">5 - <span class="body-text">As mentioned above, the navigation comprises of four categories: Home, Search, Explore and Account.</span></p>
+
+			<p class="sub-title">6 - <span class="body-text">The Search page also serves as a suggestions page for the user to engage with. This allows marketing and promotion of certain workshops / organizations based on the business needs.</span></p>
+
+			<p class="sub-title">7 - <span class="body-text">The updated User Profile is a great upgrade from the previoud design. It is also focued more on user activities and offers the concept of "Career Path".</span></p>
+
+			<p class="sub-title">8 - <span class="body-text">The User Profile page has all the user workshops listed at one place - including upcoming, past and saved workshops.</span></p>
+
+			<p class="sub-title">9 - <span class="body-text">A list of all work roles being pursued by the user and the progress status for each.</span></p>
+
+			<p class="sub-title">10 - <span class="body-text">My career path has been discussed in the Design Section.</span></p>
+
+			<p class="sub-title">11 - <span class="body-text">A compiled list of all the competencies completed by the user.</span></p>
+
+			<p class="sub-title">12 - <span class="body-text">Section to add app company related options like "About", "Policies", etc.</span></p>
+
+			<p class="sub-title">13 - <span class="body-text">A work role page is a dedicated page to discuss the workrole in detail - including the required competencies, description and the user's progress status for that work role.</span></p>
+
+			<p class="sub-title">14 - <span class="body-text">List of required competencies for the work role.</span></p>
+
+			<p class="sub-title">15 - <span class="body-text">A dedicated page to allow thw users to explore a competency in detail - Knowledge, Skills, Abilities and Tasks.</span></p>
+
+			<p class="sub-title">16 - <span class="body-text">A segmented view to display all of the K, S, A & Ts</span></p>
+
+			<p class="sub-title">17 - <span class="body-text">The workshop page is like a PDP for this app. It is to describe the workshop, the date / time, venue, media, etc.</span></p>
+
+			<p class="sub-title">18 - <span class="body-text">It also shows all the competencies covered by the workshop.</span></p><br><br>
+
+ 		<p class="sub-title">Updated Mock-up</p>
+
+		<p class="body-text">Implementing the stakeholder feedback: <a href="https://www.sketch.com/s/cee4df0a-8bc6-43e5-9a22-934517d113c1/v/Ax1vDr/a/2d03MQ/play" target="_blank" class="highlight">Updated Mock-up <i class="las la-external-link-square-alt"></i></a></p>
+
+		<h3>Getting Users Involved</h3>
+
+		<p class="body-text">By now, I had designed the interface elements; but at this stage they are just hypothesis with no actual proof of effectiveness. Hence, I requested the project lead to allow me to conduct a <span class="highlight">usability test with students</span> at our university.<br>
+		
+		Demographic Information <i class="las la-play"></i> Students, all genders, graduate students, 23-27 years of age<br>
+		Number of Participants <i class="las la-play"></i> 10<br>
+		Test type <i class="las la-play"></i> Task based survey form<br>
+		Link to the test <i class="las la-play"></i> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfgQIpVfRX5SUzT8OuOubJevyuhAFgQ0NgNHKcl_0rNaHFbIQ/viewform" target="_blank" class="highlight">CP Initial Usability Test <i class="las la-external-link-square-alt"></i></a></p>
+
+		<p class="sub-title">Important Insights from the Test<br><br></p>
+
+		<div class="two-segment">
+			<img src="assets/cp/cp-survey-1.png" class="big-bg-imgs-2">
+
+			<p class="body-text"><br class="desktop-only">
+			<i class="las la-play"></i> 37.5% of the users chose the wrong option<br>
+ 			<i class="las la-play"></i> The title for My Competencies should be more apt under User Profile<br>
+ 			<i class="las la-play"></i> The labels below the tab icons will provide the right path.</p>
+		</div>
+
+		<div class="two-segment">
+			<img src="assets/cp/cp-survey-2.png" class="big-bg-imgs-2">
+			
+			<p class="body-text"><br class="desktop-only">
+			<i class="las la-play"></i> 25% of the users chose the wrong options<br>
+ 			<i class="las la-play"></i> Encapsulation of entities based on the hierarchy will help the user better understand it.</p>
+		</div>
+
+		<div class="two-segment">
+			<img src="assets/cp/cp-survey-3.png" class="big-bg-imgs-2">
+			
+			<p class="body-text"><br class="desktop-only">
+			<i class="las la-play"></i> 37.5% of the users chose the wrong options<br>
+ 			<i class="las la-play"></i> No idea what is causing this type of error. Might be able to figure out in the next usability test.</p>
+		</div>
+
+		<div class="two-segment">
+			<img src="assets/cp/cp-survey-4.png" class="big-bg-imgs-2">
+			
+			<p class="body-text"><br class="desktop-only">
+			<i class="las la-play"></i> 50% of the users chose the wrong option<br>
+ 			<i class="las la-play"></i> The tabs should be more informative<br>
+ 			<i class="las la-play"></i> Adding labels below the tab icons might be a good solution to this.</p>
+		</div>
+
+		<div class="two-segment">
+			<img src="assets/cp/cp-survey-5.png" class="big-bg-imgs-2">
+			
+			<p class="body-text"><br class="desktop-only">
+			<i class="las la-play"></i> The app was rated high by all the users<br>
+ 			<i class="las la-play"></i> This is a good sign that we are on the right path<br>
+ 			<i class="las la-play"></i> More Comments: The orange could be changed<br>
+ 			<i class="las la-play"></i> I followed color theory to identify navy blue as the right color to bring consistency in the app; and make the app more trust-worthy and less quirky.</p>
+		</div>
+
+
+		<h3>Crafting the Visual Language</h3>
+
+		<p class="sub-title">Typography</p>
+
+		<p class="body-text">Keep it simple, silly. I've used a simple yet a very versatile font family for the complete project: Lato. The variety of weight options, the partially curved edges make it just the right font to go with the design concepts in my mind.</p>
+
+		<img src="assets/cp/cp12.png" class="big-bg-imgs-2">
+
+		<p class="sub-title">Colors</p>
+
+		<p class="body-text">The initial usability test suggested that we could drop the bright orange and use a bit more cooler color sheme. Blue suits well since it is the color for trust and has a sincere feel to it. A perfect color for an educational app. Yellow as the secondary color complements the blue and is mainly used to signify competencies throughout the system.</p>
+
+		<img src="assets/cp/cp13.png" class="big-bg-imgs-2">
+
+		<p class="sub-title">Iconography</p>
+
+		<p class="body-text">Iconography for this product has been designed inspired by the simplest of ideas we encounter around us. Taking advantage of the basic human intuition, we have worked hard to make this app easy to understand and navigate. Icons, with no doubt have played the major part in this process. </p>
+
+		<img src="assets/cp/cp15.png" class="big-bg-imgs-2">
+
+		<p class="sub-title">Designing the Entities</p>
+
+		<p class="body-text">Since the project involved a complex taxonomy for the data, I wanted to create disctinct visual representation for each entitity of the product. This made sure the entities and the relation between them is communicated well through the project.</p>
+
+	</div>
+
+	<img src="assets/cp/cp11-1.png" class="big-bg-imgs-2">
+	<img src="assets/cp/cp11-2.png" class="big-bg-imgs-2">
+	<img src="assets/cp/cp11-3.png" class="big-bg-imgs-2">
+
+	<div class="text-body-box">
+
+		<p class="sub-title">Language</p>
+
+		<p class="body-text">Language is how we communicate, how we share, how we express our intentions. It is highly important that we use this important asset in the best way possible. Language, is as important as an icon for visual design. To make sure we set the right tone for our product that matches the color scheme, we strictly followed these three foundation elements: Friendly, Precise and Informative.<br>
+			<span class="highlight">Don't waste the user's time by putting a copy that does not make them feel better, is not to the point or does not provide proper feedback.</span></p>
+
+	</div>
+
+	<img src="assets/cp/cp16.png" class="big-bg-imgs-2">
+
+	<img src="assets/cp/cp14.png" class="big-bg-imgs-2">
+
+	<div class="text-body-box">
+
+		<p class="body-text" style="text-align: center; margin-top: -80px;"><a href="https://drive.google.com/file/d/1e29qxK6r_eQFArhKf755zRH0wJjpPWig/view?usp=sharing" target="_blank" class="highlight">Click here to view the complete Style Guideline for Cyberpassport <i class="las la-external-link-square-alt"></i></a><br></p>
+
+	</div>
+
+	<img src="assets/cp/cp17.png" class="big-bg-imgs-2">
+
+	<div class="text-body-box">
+
+		<p class="body-text">Closing thoughts: The team is currently conducting final Usability Tests and a subsequent Beta Test.<br></p>
+
+	</div>
+
+
+		</div>
+	</div>
+
+</div>
+
+	<div id="footer2" value="uiux">
+				<script src="footer2.js"></script>
 	</div>
 	
 	

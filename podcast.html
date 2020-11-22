@@ -3,39 +3,28 @@
 <head>
 
 	<title>Ronak Laungani</title>
-	<link rel="stylesheet" type="text/css" href="style-desktop.css">
+	<link rel="stylesheet" type="text/css" href="style-desktop-dark.css">
 	<link rel="stylesheet" type="text/css" href="style-mobile.css">
 	<link rel="stylesheet" type="text/css" href="style-tablet.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-	<link rel="icon" type="image/svg" href="assets/R.svg">
+	<link rel="icon" type="image/svg" href="assets/favicon.svg">
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+	<meta property="og:image" content="assets/podcast/ankur-tile.jpg" />
+	<meta property="og:title" content="UnPixelate Design Podcast Series" />
+	<meta property="og:description" content="Video interviews with few of the top designers from the Indian tech industry." />
 
 
 </head>
 <body>
 
 
-	<img src="assets/R.svg" class="site-logo" onclick="window.open('index.html', '_self')">
-
+	<img src="assets/new-logo.svg" class="site-logo" onclick="window.open('index.html', '_self')">
 
 
 	<ul id="menu-list">
-					<li><a href="index.html" onclick="closemenu()">UI/UX</a></li>
-
-					<li><a href="motion.html" onclick="closemenu()">Motion</a></li>
-
-					<li><a href="logos.html" onclick="closemenu()">Logos</a></li>
-					
-					<li><a href="podcast.html" onclick="closemenu()">Podcast</a></li>
-
-					<li><a href="archive.html" onclick="closemenu()">Archives</a></li>
-
-					<li onclick="closemenu()" style="color: red; cursor: pointer;">Close Menu</li>
-
+		<script src="mobile-drop-down-menu.js"></script>
 	</ul>
-
-
-
 
 	<div class="main-body">
 
@@ -47,31 +36,14 @@
 			
 
 				<div class="page-header-bar" style="margin-top: 0px;">
-					<div class="jump-to-menu-bttn" id="menu-tag-id" style="margin-top: 0px;"><div class="title-inactive" style="float:right; margin-bottom: 20px; text-decoration: none; color: black;" onclick="openmenu()">Menu</div></div>
+					<div class="jump-to-menu-bttn" id="menu-tag-id" style="margin-top: 25px;"><div class="title-inactive" style="float:right; margin-bottom: 20px; text-decoration: none;" onclick="openmenu()">Menu</div></div>
 				</div>
 					
 					
 
-		<script src="intro.js"></script>
-			
-
-
-
-			<div id="header">
-
-				<p class="title">Hi! I'm<br>Ronak Laungani,<br><i><span id="my-designation" onclick="changetext1()">Product Designer</span></i> by the day<br><i><span id="magic-words" onclick="changetext2()">dedicated Netflix user</span></i> by the night.
-					<br>
-					<br>
-					<br>
-					<br>
-					View my <a class="highlight" href="https://drive.google.com/file/d/1s4JGbNdlyMthQclRqzSnpS6K5qXiYrEu/view?usp=sharing" target="_blank">Résumé</a><br>
-				Contact me on<br>
-				<span class="highlight" style="cursor: pointer;" onclick="copy_function('mytext')" id="mytext">launganironak@gmail.com</span><br>
-			Connect with me on<br><a class="highlight" href="https://www.linkedin.com/in/ronaklaungani/" target="_blank">LinkedIn</a> or <a class="highlight" href="https://www.facebook.com/launganironak/" target="_blank">Facebook</a>.
-			<br>
-					
+			<div class="header-show" id="intro">
+				<script src="intro.js"></script>
 			</div>
-
 
 		</div>
 
@@ -84,11 +56,9 @@
 
 		<div id="col-2">
 			
-				<div class="page-heading" style="margin: 0px;"><span class="title-inactive" id="uiux-title-id" onclick="window.open('index.html', '_self')">UI/UX</span><span class="title-inactive" id="motion-title-id" onclick="window.open('motion.html', '_self')">Motion</span><span class="title-inactive" id="logo-title-id" onclick="window.open('logos.html', '_self')">Logos</span><span class="title-active" id="podcast-title-id" onclick="window.open('podcast.html', '_self')">Podcast</span><span class="title-inactive" id="archive-title-id" onclick="window.open('archive.html', '_self')">Archives</span></div>
-			
-
-
-
+			<div class="page-heading" id="topNav" value="podcastValue" style="margin-top: 0px;">
+					<script type="text/javascript" src="top-nav.js"></script>
+			</div>
 
 			<div id="podcast">
 
@@ -96,7 +66,7 @@
 
 				<div class="card-left" style="background-image: url(assets/podcast/ankur-tile.jpg);" onclick="window.open('https://www.youtube.com/watch?v=tr_mT9-T3hM&feature=youtu.be')">
 					<div class="tile-text-box-podcast">
-						<h1>Ankur<br>Sardana</h1>
+						<h1>Ankur Sardana</h1>
 						<h2>of Amazon | 3 episodes</h2>
 					</div>
 
@@ -104,7 +74,7 @@
 
 				<div class="card-right" style="background-image: url(assets/podcast/steve-tile.jpg);" onclick="window.open('https://www.youtube.com/watch?v=r-mIRtXSVoM&feature=youtu.be')">
 					<div class="tile-text-box-podcast">
-						<h1>Steve<br>Yatson</h1>
+						<h1>Steve Yatson</h1>
 						<h2>of ProductOps | 1 episode</h2>
 					</div>
 
@@ -112,7 +82,7 @@
 
 				<div class="card-left" style="background-image: url(assets/podcast/aiswarya-tile.jpg);" onclick="window.open('https://www.youtube.com/watch?v=sqXi3g-yuPY&feature=youtu.be')">
 					<div class="tile-text-box-podcast">
-						<h1>Aiswarya<br>Kolisetty</h1>
+						<h1>Aiswarya Kolisetty</h1>
 						<h2>of Zomato | 3 episodes</h2>
 					</div>
 
@@ -120,7 +90,7 @@
 
 				<div class="card-right" style="background-image: url(assets/podcast/mayur-tile.jpg);" onclick="window.open('https://www.youtube.com/watch?v=YEDZUWHyTsU&feature=youtu.be')">
 					<div class="tile-text-box-podcast">
-						<h1>Mayur<br>Chaudhary</h1>
+						<h1>Mayur Chaudhary</h1>
 						<h2>of MagicBricks | 3 episodes</h2>
 					</div>
 
@@ -128,7 +98,7 @@
 
 				<div class="card-left" style="background-image: url(assets/podcast/amit-tile.jpg);" onclick="window.open('https://www.youtube.com/watch?v=eGJb9m0PNE8&feature=youtu.be')">
 					<div class="tile-text-box-podcast">
-						<h1>Amit<br>Bhambere</h1>
+						<h1>Amit Bhambere</h1>
 						<h2>of Hotstar | 2 episodes</h2>
 					</div>
 
@@ -136,7 +106,7 @@
 
 				<div class="card-right" style="background-image: url(assets/podcast/prathima-tile.jpg);" onclick="window.open('https://www.youtube.com/watch?v=j4aQUT1bC7c&feature=youtu.be')">
 					<div class="tile-text-box-podcast">
-						<h1>Prathima<br>Inolu</h1>
+						<h1>Prathima Inolu</h1>
 						<h2>of Divami Design | 3 episodes</h2>
 					</div>
 
@@ -148,14 +118,8 @@
 
 
 
-			<div class="footer">
-
-				<a class="highlight" href="#top">Go to top</a>
-
-				<p class="title">
-					<span style="opacity: 30%;">Designed & Developed by<br>
-					©Ronak Laungani 2020</span>
-				</p>
+			<div id="footer">
+				<script src="footer.js"></script>
 			</div>
 
 		</div>
